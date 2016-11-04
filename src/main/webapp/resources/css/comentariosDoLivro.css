@@ -1,0 +1,90 @@
+.comentariosDoLivro {
+	font-size: 1rem;
+}
+
+.comentariosDoLivro-lista {
+	color: #6c6a69;
+}
+
+.comentariosDoLivro-lista-quoteItem {
+	width: 100%;
+	text-align: center;
+	margin: .5em 0;
+	line-height: 0;
+}
+
+.comentariosDoLivro-lista-item-imagem {
+	width: 60px;
+	border-radius: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.comentariosDoLivro-lista-item-autor {
+	color: #6c6a69;
+	max-width: calc(100% - 60px - .5em);
+	margin-left: .5em;
+	font-family: "open-sans", sans-serif;
+	font-weight: 700;
+	font-size: .95em;
+	line-height: 1.35;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.comentariosDoLivro-lista-item-autor-twitter {
+	display: block;
+	font-weight: 400;
+	color: #f8965d;
+}
+
+.comentariosDoLivro-lista-item-comentario {
+	color: #6c6a69;
+	font-family: "museo", serif;
+	font-weight: 200;
+	margin-top: .5em;
+	font-size: .95em;
+	line-height: 1.5;
+}
+
+@media screen and (min-width: 600px) {
+	.comentariosDoLivro-lista-item {
+		max-width: 45%;
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+		margin-bottom: 1.5em;
+	}
+
+	.comentariosDoLivro-lista-quoteItem:nth-child(4n) {
+		display: none;
+	}
+
+	.comentariosDoLivro-lista-quoteItem {
+		width: 10%;
+		margin: .6em auto;
+		display: inline-block;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.comentariosDoLivro-lista-item {
+		max-width: 27%;
+	}
+
+	.comentariosDoLivro-lista-quoteItem {
+		width: 9.5%;
+	}
+
+	.comentariosDoLivro-lista-quoteItem:nth-child(4n) {
+		display: inline-block;
+	}
+
+	.comentariosDoLivro-lista-quoteItem:nth-child(6n) {
+		display: none;
+	}
+}
+
+.comentariosDoLivro-lista-quoteItem:last-child {
+	display: none;
+}

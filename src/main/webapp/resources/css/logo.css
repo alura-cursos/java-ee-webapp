@@ -1,0 +1,81 @@
+.logo {
+	width: 119px;
+	height: 55px;
+}
+
+.logo-casaDoCodigo{
+	fill:#FBFAF9;
+}
+
+.logo-slogan{
+	fill:#F9E8E1;
+	opacity:0.5;
+}
+
+.logo-backgroundSimbolo {
+	visibility: hidden;
+}
+
+.logo-simbolo{
+	visibility: hidden
+}
+
+.logo-text {
+	-webkit-transform: translate(-77px, 0);
+	        transform: translate(-77px, 0);
+}
+
+@media screen and (min-width: 320px){
+	.logo {
+		width: 173px;
+	}
+
+	.logo-backgroundSimbolo {
+		fill:#FBFAF9;
+	}
+
+	.logo-simbolo{
+		visibility: visible;
+		-webkit-transform: translate(-18px, 0);
+		        transform: translate(-18px, 0);
+	}
+
+	.logo-text {
+		-webkit-transform: translate(-35px, 0);
+		        transform: translate(-35px, 0);
+	}
+
+	.logo-simboloParteInterna{
+		fill:#FBFAF9;
+	}
+
+	.logo-simboloParteExterna{
+		fill:#D5BEB2;
+	}
+}
+
+@media screen and (min-width: 430px){
+	.logo-simbolo{
+		-webkit-transform: translate(0, 0);
+		        transform: translate(0, 0);
+	}
+	.logo-text {
+		-webkit-transform: translate(0, 0);
+		        transform: translate(0, 0);
+	}
+
+	.logo {
+		width: 208px;
+	}
+
+	.logo-backgroundSimbolo {
+		visibility: visible;
+	}
+
+	.logo-simboloParteInterna{
+		fill:#FAC459;
+	}
+	.logo-simboloParteExterna{
+		fill:#F8965D;
+	}
+}

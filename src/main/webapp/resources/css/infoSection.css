@@ -1,0 +1,33 @@
+.infoSection {
+	padding-top: 2em;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.infoSection-titulo {
+	font-family: "open-sans", sans-serif;
+	font-size: 1.8em;
+	font-weight: 700;
+	width:100%;
+	border-bottom: 2px solid rgba(108, 105, 105, 0.3);
+	padding-bottom: .35em;
+	margin-bottom: .6em;
+	color: #6c6a69;
+}
+
+.infoSection-texto {
+	font-family: "museo", serif;
+	font-size: 1.1em;
+	line-height: 1.8;
+	color: #6c6a69;
+	font-weight: 300;
+	margin-top: 1em;
+}
+
+@media screen and (min-width: 1205px) {
+	.infoSection {
+		padding-top: 5em;
+		padding-left: calc(50% - 600px);
+		padding-right: calc(50% - 600px);
+	}
+}

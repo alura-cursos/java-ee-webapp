@@ -1,0 +1,45 @@
+.cabecalhoDaColecao {
+	width: 100%;
+	font-family: "open-sans", sans-serif;
+	position: relative;
+	height: 10em;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center top;
+	background-color: #333;
+}
+
+.cabecalhoDaColecao-titulo {
+	position: absolute;
+	padding-left: 5%;
+	top: .64em;
+	font-size: 1.5em;
+	line-height: 5.3em;
+	font-weight: 800;
+	text-align: right;
+	color: #fff;
+	min-width: 300px;
+	max-width: 90%;
+	padding-right: 1em;
+	box-sizing: border-box;
+}
+
+#colecao-livros-de-java,
+#colecao-livros-de-mobile {
+	background-position: center center;
+}
+
+@media screen and (min-width: 510px) {
+	.cabecalhoDaColecao-titulo {
+		padding-right: 1.5em;
+		font-size: 2em;
+		line-height: 4em;
+		top: .47em;
+	}
+}
+
+@media screen and (min-width: 1205px) {
+	.cabecalhoDaColecao-titulo {
+		padding-left: calc(50% - 600px);
+	}
+}

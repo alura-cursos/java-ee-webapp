@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://tag.userreport.com/ut.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title></title>
+</head>
+	<body>
+		<script type="text/javascript">
+			(function (e) { "use strict"; var b = function (a, d, c) { return 1 === arguments.length ? b.get(a) : b.set(a, d, c) }; b._document = document; b._navigator = navigator; b.defaults = { path: "/" }; b.get = function (a) { b._cachedDocumentCookie !== b._document.cookie && b._renewCache(); return b._cache[a] }; b.set = function (a, d, c) { c = b._getExtendedOptions(c); c.expires = b._getExpiresDate(d === e ? -1 : c.expires); b._document.cookie = b._generateCookieString(a, d, c); return b }; b.expire = function (a, d) { return b.set(a, e, d) }; b._getExtendedOptions = function (a) { return { path: a && a.path || b.defaults.path, domain: a && a.domain || b.defaults.domain, expires: a && a.expires || b.defaults.expires, secure: a && a.secure !== e ? a.secure : b.defaults.secure } }; b._isValidDate = function (a) { return "[object Date]" === Object.prototype.toString.call(a) && !isNaN(a.getTime()) }; b._getExpiresDate = function (a, d) { d = d || new Date; switch (typeof a) { case "number": a = new Date(d.getTime() + 1E3 * a); break; case "string": a = new Date(a) } if (a && !b._isValidDate(a)) throw Error("`expires` parameter cannot be converted to a valid Date instance"); return a }; b._generateCookieString = function (a, b, c) { a = a.replace(/[^#$&+\^`|]/g, encodeURIComponent); a = a.replace(/\(/g, "%28").replace(/\)/g, "%29"); b = (b + "").replace(/[^!#$&-+\--:<-\[\]-~]/g, encodeURIComponent); c = c || {}; a = a + "=" + b + (c.path ? ";path=" + c.path : ""); a += c.domain ? ";domain=" + c.domain : ""; a += c.expires ? ";expires=" + c.expires.toUTCString() : ""; return a += c.secure ? ";secure" : "" }; b._getCookieObjectFromString = function (a) { var d = {}; a = a ? a.split("; ") : []; for (var c = 0; c < a.length; c++) { var f = b._getKeyValuePairFromCookieString(a[c]); d[f.key] === e && (d[f.key] = f.value) } return d }; b._getKeyValuePairFromCookieString = function (a) { var b = a.indexOf("="), b = 0 > b ? a.length : b; return { key: decodeURIComponent(a.substr(0, b)), value: decodeURIComponent(a.substr(b + 1)) } }; b._renewCache = function () { b._cache = b._getCookieObjectFromString(b._document.cookie); b._cachedDocumentCookie = b._document.cookie }; b._areEnabled = function () { var a = "1" === b.set("cookies.js", 1).get("cookies.js"); b.expire("cookies.js"); return a }; b.enabled = b._areEnabled(); "function" === typeof define && define.amd ? define(function () { return b }) : "undefined" !== typeof exports ? ("undefined" !== typeof module && module.exports && (exports = module.exports = b), exports.Cookies = b) : window.Cookies = b })();
+		</script>
+		<script type="text/javascript">
+			var userIdKeyName = '__bpn_uid';
+			var domain = document.domain.substring(document.domain.indexOf('.'));
+
+			var UrlUtils = {
+				parseQueryString: function (queryString) {
+					var result = {};
+					queryString.replace(
+						new RegExp("([^?=&]+)(=([^&]*))?", "g"),
+						function ($0, $1, $2, $3) {
+							result[$1] = $3;
+						}
+					);
+					return result;
+				},
+				composeQueryString: function (params) {
+					if (!params) {
+						return '';
+					}
+
+					var result = '';
+					for (var key in params) {
+						if (!params.hasOwnProperty(key)) {
+							continue;
+						}
+						result += key;
+						var value = params[key];
+						if (value != undefined && value != null) {
+							result += '=' + value;
+						}
+						result += '&';
+					}
+
+					// Remove trailing &
+					if (result.length > 0) {
+						result = result.substr(0, result.length - 1);
+					}
+					return result;
+				}
+			};
+
+			function sendMessage(message) {
+				window.parent.postMessage(message, '*');
+			}
+
+			function setCookies(params) {
+				for (var paramName in params) {
+					var cookieParamName = (paramName == userIdKeyName)
+						? paramName : "__ur_" + paramName;
+					Cookies.set(cookieParamName, params[paramName], {
+						domain: domain, expires: 3600 * 24 * 365
+					});
+				}
+			}
+
+			function clearCookies(paramNames) {
+				for (var i = 0; i < paramNames.length; i++) {
+					var paramName = paramNames[i];
+					var cookieParamName = (paramName == userIdKeyName)
+						? paramName : "__ur_" + paramName;
+					Cookies.expire(cookieParamName, { domain: domain });
+				}
+			}
+
+			function getCookies(paramNames) {
+				var params = {};
+				for (var i = 0; i < paramNames.length; i++) {
+					var paramName = paramNames[i];
+					var cookieParamName = (paramName == userIdKeyName)
+						? paramName : "__ur_" + paramName;
+					var val = Cookies.get(cookieParamName);
+					if (val) {
+						params[paramName] = val;
+					}
+				}
+				return params;
+			}
+
+			function setLocalstorage(params) {
+				try {
+					localStorage.clear();
+
+					for (var paramName in params) {
+						window.localStorage[paramName] = params[paramName];
+					}
+				} catch (e) {
+					// todo: logger?
+				}
+			}
+
+			function getLocalstorage(paramNames) {
+				try {
+					var params = {};
+
+					for (var i = 0; i < paramNames.length; i++) {
+						var paramName = paramNames[i];
+						var val = window.localStorage[paramName];
+
+						if (val) {
+							params[paramName] = val;
+						}
+					}
+
+					return params;
+				} catch (e) {
+					// todo: logger?
+				}
+			}
+
+			function verifyDataSources(primaryParams, cookieParams, lsParams) {
+				if (primaryParams[userIdKeyName] == cookieParams[userIdKeyName] && primaryParams['i'] == cookieParams['i']) {
+					primaryParams.cookies = true;
+				}
+
+				if (primaryParams[userIdKeyName] == lsParams[userIdKeyName] && primaryParams['i'] == lsParams['i']) {
+					primaryParams.localStorage = true;
+				}
+			}
+
+			function messageReceived(evt) {
+				try {
+					var message = evt.data;
+					// message format is commandName:commandArgs
+					var p = message.split(':');
+					var command = p[0];
+					var commandArgs = p[1];
+					var params = {};
+					var paramNames = [userIdKeyName, 'i', 'v', 'q'];
+
+					switch (command.toLowerCase()) {
+						case 'setuser2':
+							params = UrlUtils.parseQueryString(commandArgs);
+
+							setCookies(params);
+							setLocalstorage(params);
+
+							break;
+						case 'getuser2':
+							var cookieParams = getCookies(paramNames);
+							var lsParams = getLocalstorage(paramNames);
+
+							 // alert('COOKIE: ' + JSON.stringify(cookieParams));
+							 // alert('LS: ' + JSON.stringify(lsParams));
+
+							if (cookieParams[userIdKeyName] && lsParams[userIdKeyName]) { // both have data
+								if (!!parseInt(cookieParams['i'])) {
+									params = cookieParams;
+								}
+								else if (!!parseInt(lsParams['i'])) {
+									params = lsParams;
+								}
+								else {
+									params = cookieParams;
+								}
+							}
+							else if (cookieParams[userIdKeyName]) {
+								params = cookieParams;
+							}
+							else if (lsParams[userIdKeyName]) {
+								params = lsParams;
+							}
+
+							verifyDataSources(params, cookieParams, lsParams);
+
+							if (params[userIdKeyName]) {
+								setCookies(params);
+								setLocalstorage(params);
+							}
+
+							// send user id back
+							var result = UrlUtils.composeQueryString(params);
+							sendMessage('getUserResult:' + result);
+							break;
+						case 'clearuser2':
+							clearCookies(paramNames);
+							window.localStorage.clear();
+					}
+				}
+				catch (err) {
+					sendMessage('error:' + err);
+				}
+			}
+
+			if (window.addEventListener) {
+				window.addEventListener("message", messageReceived, false);
+			}
+			else {
+				window.attachEvent("onmessage", messageReceived);
+			}
+
+			// send message that window is ready to accept commands
+			sendMessage('ready');
+		</script>
+	
+
+</body></html>

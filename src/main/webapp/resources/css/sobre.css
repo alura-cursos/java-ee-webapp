@@ -1,0 +1,47 @@
+.sobre-imagem {
+	display: block;
+	margin: 0 auto;
+}
+
+.sobre-editor {
+	font-size: 0;
+	margin-bottom: 1rem;
+}
+
+.sobre-editor-imagem {
+	display: inline-block;
+	vertical-align: middle;
+	width: 60px;
+	margin-right: 10px;
+	border-radius: 100%;
+}
+
+.sobre-editor-nome {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: calc(100% - 70px);
+	font-family: "museo", serif;
+	font-size: 1.2rem;
+	font-weight: 700;
+	line-height: 1.2;
+	color: #6c6a69;
+}
+
+.sobre-editor-linkTwitter {
+	display: block;
+	font-size: .8em;
+	font-weight: 400;
+	color: #f8965d;
+	text-decoration: underline;
+}
+
+.sobre-editor-descricao {
+	font-size: .9rem;
+}
+
+@media screen and (min-width: 549px) {
+	.sobre-imagem {
+		float: right;
+		margin: .6em 0 .6em .6em;
+	}
+}

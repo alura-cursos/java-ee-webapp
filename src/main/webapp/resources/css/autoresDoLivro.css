@@ -1,0 +1,46 @@
+.autoresDoLivro-autor + .autoresDoLivro-autor {
+	margin-top: 2em;
+}
+
+.autoresDoLivro-autor-foto {
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	background-color: #000;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.autoresDoLivro-autor-nome {
+	font-family: "museo", serif;
+	max-width: calc(100% - 80px - .5em);
+	margin-left: .5em;
+	font-size: 1.5em;
+	font-weight: 700;
+	line-height: 1.2;
+	display: inline-block;
+	vertical-align: middle;
+	color: #6c6a69;
+}
+
+.autoresDoLivro-autor-descricao {
+	clear: both;
+}
+
+@media screen and (min-width: 729px){
+	.autoresDoLivro-autor-foto {
+		width: 4.5em;
+		height: 4.5em;
+	}
+
+	.autoresDoLivro-autor-foto {
+		float: left;
+	}
+	.autoresDoLivro-autor-nome,
+	.autoresDoLivro-autor-descricao {
+		clear: none;
+		display: block;
+		overflow: hidden;
+		margin-left: 6rem;
+	}
+}

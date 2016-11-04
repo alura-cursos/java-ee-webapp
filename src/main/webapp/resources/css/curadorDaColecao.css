@@ -1,0 +1,19 @@
+.curadorDaColecao-imagem {
+	width: 3.75em;
+	height: 3.75em;
+	border-radius: 100%;
+	background-color: #000;
+	display: inline-block;
+	vertical-align: middle
+}
+
+.curadorDaColecao-curador {
+	font-family: "open-sans", sans-serif;
+	max-width: calc(100% - 2.8em - .5em);/* 2.8=3.75/1.35 */
+	margin-left: .5em;
+	font-size: 1.35em;
+	font-weight: 600;
+	display: inline-block;
+	vertical-align: middle;
+	color: #6c6a69;
+}

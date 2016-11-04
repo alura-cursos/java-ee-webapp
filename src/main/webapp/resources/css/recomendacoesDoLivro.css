@@ -1,0 +1,105 @@
+.recomendacoes {
+	margin-top: 2em;
+	width: 100%;
+	background-color: #f2f0ee;
+	padding-bottom: 1em;
+}
+
+.recomendacoes-livros {
+	text-align: center;
+}
+
+.recomendacoes-livros > * {
+	vertical-align: middle;
+}
+
+.recomendacoes-livro {
+	display: inline-block;
+}
+
+.recomendacoes-livro {
+	width: 42%;
+}
+
+.recomendacoes-plus {
+	display: inline-block;
+	box-sizing: border-box;
+	padding-bottom: 1em;
+
+	text-align: center;
+	font-size: 3em;
+	font-family: "open-sans", sans-serif;
+	color: #b8b3af;
+	font-weight: 800;
+}
+
+.recomendacoes-ofertas {
+	display: inline-block;
+	width: 100%;
+}
+
+@media screen and (min-width: 636px) and (max-width: 755px) {
+	.recomendacoes-ofertas .adicionarAoCarrinho-tipoDaOferta {
+		display: block;
+		width: auto;
+		margin-right: .5em;
+	}
+}
+
+@media screen and (min-width: 660px) and (max-width: 790px) {
+	.recomendacoes-livro:nth-child(1) {
+		margin-left: 2em;
+	}
+	.recomendacoes-livro:nth-child(3) {
+		margin-right: 2em;
+	}
+}
+
+@media screen and (min-width: 791px) {
+	.recomendacoes-livros:after {
+		content: ' ';
+		display: inline-block;
+		height: 0;
+		width: 100%;
+		color: transparent;
+		font-size: 0;
+	}
+
+	.recomendacoes-livro {
+		max-width: 160px;
+	}
+	.recomendacoes-ofertas {
+		width: calc(100% - 320px - 4em);
+	}
+
+	.recomendacoes-ofertas .adicionarAoCarrinho-listaOfertas {
+		padding-right: 0;
+	}
+}
+@media screen and (min-width: 791px) and (max-width: 885px) {
+	.recomendacoes-ofertas .adicionarAoCarrinho-tipoDaOferta {
+		display: block;
+		width: auto;
+		margin-right: .5em;
+	}
+	.recomendacoes-ofertas .adicionarAoCarrinho-tipoDaOferta-detalhe,
+	.recomendacoes-ofertas .adicionarAoCarrinho-preco-promocao {
+		display: none;
+	}
+
+	.recomendacoes-ofertas .adicionarAoCarrinho-preco {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 886px) and (max-width: 1180px) {
+	.recomendacoes-ofertas .adicionarAoCarrinho-tipoDaOferta {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 1205px) {
+	.recomendacoes .infoSection {
+		padding-top: 2em;
+	}
+}

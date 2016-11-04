@@ -1,0 +1,58 @@
+.busca {
+	padding-top: 2em;
+}
+
+.busca-termos {
+	font-weight: 400;
+	color: #f8965d;
+}
+
+.busca-item {
+	padding: .5em;
+	margin-bottom: .5em;
+	border-radius: 2px;
+}
+
+.busca-item-imagem {
+	display: inline-block;
+	vertical-align: middle;
+	width: 64px;
+	margin-right: 6px;
+}
+
+.busca-item-titulo {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: calc(100% - 70px);
+	color: #6c6a69;
+	font-family: "open-sans", sans-serif;
+	font-weight: 700;
+	font-size: .9em;
+	line-height: 1.35;
+}
+
+.busca-item-descricao {
+	margin-top: .5em;
+	color: #6c6a69;
+	font-family: "museo", serif;
+	font-weight: 200;
+	font-size: .95em;
+	line-height: 1.5;
+}
+
+.busca-item-descricao-chamada {
+	color: #f8965d;
+	font-family: "museo", serif;
+	text-decoration: underline;
+}
+
+.busca-comentario {
+	margin-bottom: 1em;
+	color: #6c6a69;
+	font-family: "open-sans", sans-serif;
+	font-weight: 600;
+}
+
+.busca-item:nth-child(odd) {
+	background-color: rgba(0,0,0,.03);
+}

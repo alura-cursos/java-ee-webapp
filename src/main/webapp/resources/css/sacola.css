@@ -1,0 +1,21 @@
+.sacola {
+	display: inline-block;
+	background-color: #FFF;
+	width:55px;
+	text-align: center;
+	position: relative;
+}
+
+.sacola-contador {
+	font-family: "museo", serif;
+	font-weight: 700;
+	text-decoration: none;
+	fill: #ed9764;
+	font-size: .8em;
+}
+
+.sacola-icone {
+	position:absolute;
+	top: 12px;
+	left: 17px;
+}

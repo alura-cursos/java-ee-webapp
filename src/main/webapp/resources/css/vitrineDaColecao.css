@@ -1,0 +1,126 @@
+.vitrineDaColecao {
+	font-size: 1rem;
+	background-color: #fbfaf9;
+	padding-top: 2em;
+}
+
+.vitrineDaColecao-link,
+.vitrineDaColecao-titulo {
+	font-family: "open-sans", sans-serif;
+	color: #f8965d;
+	line-height: 1;
+}
+
+.vitrineDaColecao-produto {
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 2.5em;
+}
+
+.vitrineDaColecao-link {
+	font-weight: 600;
+	font-size: 1em;
+	text-align: center;
+	display: inline-block;
+	padding: .3em;
+}
+
+.vitrineDaColecao-linkTexto {
+	text-transform: lowercase;
+	line-height: 1.5;
+	display: block;
+}
+
+.vitrineDaColecao-titulo {
+	text-align: left;
+	font-weight: 700;
+	font-size: 1.75em;
+	border-bottom: 2px solid;
+	padding-bottom: .35em;
+	margin-bottom: 1em;
+}
+
+@media screen and (max-width: 509px) {
+	.vitrineDaColecao-lista {
+		text-align: justify;
+		line-height: 0;
+	}
+
+	.vitrineDaColecao-lista:after {
+		content: ".";
+		color: transparent;
+		display: inline-block;
+		height: 0;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 510px) {
+	.vitrineDaColecao-lista {
+		font-size: 0;
+	}
+	.vitrineDaColecao-produto {
+		font-size: 1rem;
+	}
+}
+@media screen and (min-width: 510px) and (max-width: 659px) {
+	.vitrineDaColecao-lista {
+		font-size: 0;
+	}
+	.vitrineDaColecao-produto {
+		font-size: 1rem;
+		width: 140px;
+	}
+	.vitrineDaColecao-produto:nth-child(3n+2) {
+		margin-left: calc(50% - 210px);
+		margin-right: calc(50% - 210px);
+	}
+}
+
+@media screen and (min-width: 660px) and (max-width: 759px) {
+	.vitrineDaColecao-produto {
+		width: 180px;
+	}
+	.vitrineDaColecao-produto:nth-child(3n+2) {
+		margin-left: calc(50% - 270px);
+		margin-right: calc(50% - 270px);
+	}
+}
+
+@media screen and (min-width: 760px) and (max-width: 999px) {
+	.vitrineDaColecao-produto {
+		width: 204px;
+	}
+	.vitrineDaColecao-produto:nth-child(3n+2) {
+		margin-left: calc(50% - 306px);
+		margin-right: calc(50% - 306px);
+	}
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1204px) {
+	.vitrineDaColecao-produto {
+		width: 205px;
+		margin-left: calc(16.666% - 136.667px);
+		margin-right: calc(16.666% - 136.667px);
+	}
+	.vitrineDaColecao-produto:nth-child(4n+1) {
+		margin-left: 0;
+	}
+	.vitrineDaColecao-produto:nth-child(4n+4) {
+		margin-right: 0;
+	}
+}
+
+@media screen and (min-width: 1205px) {
+	.vitrineDaColecao-produto {
+		width: 205px;
+		margin-left: calc(12.5% - 128.13px);
+		margin-right: calc(12.5% - 128.13px);
+	}
+	.vitrineDaColecao-produto:nth-child(5n+1) {
+		margin-left: 0;
+	}
+	.vitrineDaColecao-produto:nth-child(5n+5) {
+		margin-right: 0;
+	}
+}

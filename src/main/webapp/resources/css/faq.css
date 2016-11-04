@@ -1,0 +1,21 @@
+.faq-item {
+	margin-bottom: 1em;
+}
+
+.faq-pergunta {
+	font-family: "museo", serif;
+	font-weight: 600;
+	font-size: 1.2em;
+	line-height: 1.3;
+	color: #6c6a69;
+}
+
+.faq-resposta {
+	font-size: 1em;
+}
+
+.faq-link {
+	color: #f8965d;
+	font-family: "museo", serif;
+	text-decoration: underline;
+}

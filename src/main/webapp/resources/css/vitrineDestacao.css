@@ -1,0 +1,191 @@
+.vitrineDestacao {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	background-image: url(//cdn.shopify.com/s/files/1/0155/7645/t/212/assets/fundoDestacao.svg?1511684737364938382);
+	background-size: 10em;
+	background-color: #3a3a3a;
+}
+
+.vitrineDestacao-lista {
+	font-size: 0;
+}
+
+.vitrineDestacao-item {
+	font-size: 1rem;
+}
+
+.vitrineDestacao-item-nome {
+	color: #fff;
+}
+
+.vitrineDestacao-item-maisDetalhes {
+	font-family: "open-sans", sans-serif;
+	font-weight: 700;
+	font-size: 1em;
+	line-height: 1;
+	color: #FFF;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 12px 0;
+	border-radius: 2px;
+	display: block;
+	width: 100%;
+	max-width: 210px;
+	margin: 1em auto 0;
+	background-color: #fac459;
+	box-shadow: 0 1px 0 0 #eebc58;
+}
+
+.vitrineDestacao-item:hover .vitrineDestacao-item-maisDetalhes {
+	background-color: #E4A830;
+}
+
+.vitrineDestacao-itemPrincipal {
+	display: block;
+	width: 100%;
+	max-width: 350px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.vitrineDestacao-itemPrincipal .vitrineDestacao-item-info {
+	display: block;
+	width: 100%;
+	margin: 1em 0;
+	text-align: center;
+}
+
+.vitrineDestacao-itemPrincipal .vitrineDestacao-item-nome {
+	font-family: "open-sans", sans-serif;
+	line-height: 1.25;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+
+.vitrineDestacao-itemPrincipal .vitrineDestacao-item-imagem {
+	margin: 0 auto;
+	margin-bottom: 1em;
+}
+
+.vitrineDestacao-itemSecundario {
+	display: inline-block;
+	width: 45%;
+}
+.vitrineDestacao-itemSecundario .vitrineDestacao-item-imagem {
+	box-shadow: 3px 3px 5px #383838;
+}
+
+@media screen and (max-width: 379px) {
+	.vitrineDestacao-itemSecundario .vitrineDestacao-item-maisDetalhes {
+		font-size: .8em;
+	}
+}
+
+@media screen and (max-width: 523px) {
+	.vitrineDestacao-itemSecundario + .vitrineDestacao-itemSecundario {
+		margin-left: 10%;
+	}
+}
+
+@media screen and (min-width: 524px) and (max-width: 629px) {
+	.vitrineDestacao-itemSecundario {
+		width: 205px;
+	}
+	.vitrineDestacao-itemSecundario {
+		margin: 0 calc(25% - 102.5px);
+	}
+}
+
+@media screen and (min-width: 630px) {
+	.vitrineDestacao {
+		background-size: 15em;
+	}
+}
+@media screen and (max-width: 630px) {
+	.vitrineDestacao-itemPrincipal {
+		margin-bottom: 2em;
+	}
+}
+@media screen and (min-width: 630px) and (max-width: 1159px) {
+	.vitrineDestacao-item {
+		display: inline-block;
+		width: 180px;
+		vertical-align: top;
+	}
+
+	.vitrineDestacao-item:nth-child(3n+2) {
+		margin: 0 calc(50% - 270px);
+	}
+
+	.vitrineDestacao-itemPrincipal .vitrineDestacao-item-info {
+		margin: 0;
+	}
+	.vitrineDestacao-itemPrincipal .vitrineDestacao-item-nome {
+		margin-top: 1em;
+		height: 2.5em;
+		font-size: 1em;
+	}
+	.vitrineDestacao-itemPrincipal .vitrineDestacao-item-maisDetalhes {
+		margin-top: 1.16em;
+	}
+	.vitrineDestacao-itemPrincipal .vitrineDestacao-item-imagem {
+		margin-bottom: 0;
+	}
+	.vitrineDestacao-itemPrincipal .imagemLivroNinja-principal {
+		width: 100%;
+		left: 0;
+		top: 0;
+		box-shadow: 3px 3px 5px #383838;
+	}
+	.vitrineDestacao-itemPrincipal .imagemLivroNinja-tablet,
+	.vitrineDestacao-itemPrincipal .imagemLivroNinja-cel {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1160px) {
+	.vitrineDestacao-item {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.vitrineDestacao-item:nth-child(3n+2) {
+		margin: 0 calc(50% - 488px);
+	}
+
+	.vitrineDestacao-itemPrincipal {
+		margin-left: 0;
+		margin-right: 216px;
+	}
+	.vitrineDestacao-itemPrincipal .vitrineDestacao-item-info {
+		position: absolute;
+		left: 100%;
+		top: 15%;
+		text-align: left;
+		margin: 0;
+		width: 216px;
+		padding: 0.7em 1em 1.4em .5em;
+		background-color: rgba(51,51,51,.8);
+	}
+	.vitrineDestacao-itemPrincipal .vitrineDestacao-item-nome {
+		font-size: 2em;
+	}
+	.vitrineDestacao-itemPrincipal .vitrineDestacao-item-maisDetalhes {
+		margin: 1em 0 0;
+	}
+	.vitrineDestacao-itemSecundario .vitrineDestacao-item-nome {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1205px) {
+	.vitrineDestacao-itemPrincipal .vitrineDestacao-item-info {
+		padding: 1.4em 2em 2em 1.7em;
+	}
+	.vitrineDestacao-itemPrincipal {
+		max-width: 420px;
+	}
+	.vitrineDestacao-item:nth-child(3n+2) {
+		margin: 0 calc(50% - 523px);
+	}
+
+}

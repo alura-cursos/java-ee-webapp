@@ -1,0 +1,113 @@
+.buscaDoRodape {
+	width: 100%;
+	background-color: #333;
+	padding: 40px 1em;
+	box-sizing: border-box;
+	margin-top: 2em;
+}
+
+.buscaDoRodape-formulario {
+	margin: 0 auto;
+	display: block;
+}
+
+.buscaDoRodape-rotuloEscondido {
+	display: none;
+}
+
+.buscaDoRodape-rotulo {
+	color: #fff;
+	display: block;
+	font-family: "open-sans", sans-serif;
+	font-weight: 800;
+	margin: 0 auto.4em;
+	font-size: 1.45em;
+	width: 100%;
+	max-width: 700px;
+	line-height: 1.2;
+}
+
+.buscaDoRodape-fieldset {
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
+	position: relative;
+	background-color: #fff;
+	border-radius: 2px;
+	line-height: 0;
+	text-align: justify;
+	padding: .2em;
+}
+
+.buscaDoRodape-fieldset:after {
+	content: '.';
+	display: inline-block;
+	width: 100%;
+	color: transparent;
+	height: 0;
+}
+
+.buscaDoRodape-campo {
+	font-family: "museo", serif;
+	font-weight: 300;
+	-webkit-appearance: none;
+	border: none;
+	height: 50px;
+	width: 70%;
+	font-size: 1.3em;
+	display: inline-block;
+	background: none;
+	vertical-align: middle;
+	color: #6c6a69;
+}
+
+.buscaDoRodape-enviar {
+	display: inline-block;
+	font-family: "museo", serif;
+	background-image: url(//cdn.shopify.com/s/files/1/0155/7645/t/212/assets/search.svg?2958380323817775077);
+	line-height: 0;
+	color: transparent;
+	background-color: #f8965d;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25px;
+	border: none;
+	border-radius: 2px;
+	width: 30%;
+	max-width: 77px;
+	height: 50px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.buscaDoRodape-enviar:hover {
+	background-color: #DA6B2A;
+}
+
+@media screen and (min-width: 340px) {
+	.buscaDoRodape-campo {
+		width: calc(100% - 84px);
+	}
+}
+
+@media screen and (min-width: 845px) {
+	.buscaDoRodape-rotulo,
+	.buscaDoRodape-fieldset {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.buscaDoRodape {
+		text-align: center;
+		margin-top: 3em;
+	}
+
+	.buscaDoRodape-fieldset {
+		width: 75%;
+	}
+
+	.buscaDoRodape-rotulo {
+		text-align: right;
+		max-width: 8.1em;
+		margin-right: 1em;
+		margin: 0 .4em 0 0;
+	}
+}

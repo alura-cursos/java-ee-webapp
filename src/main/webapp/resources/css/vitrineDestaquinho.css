@@ -1,0 +1,141 @@
+.vitrineDestaquinho {
+	font-size: 1rem;
+	background-color: #fbfaf9;
+	padding-top: 1.5em;
+}
+
+.vitrineDestaquinho-link,
+.vitrineDestaquinho-titulo {
+	font-family: "open-sans", sans-serif;
+	color: #f8965d;
+	line-height: 1;
+}
+
+.vitrineDestaquinho-lista {
+	text-align: justify;
+	line-height: 0;
+}
+
+.vitrineDestaquinho-lista:after {
+	content: ".";
+	color: transparent;
+	display: inline-block;
+	height: 0;
+	width: 100%;
+}
+
+.vitrineDestaquinho-link {
+	font-weight: 600;
+	font-size: 1em;
+	text-align: center;
+	display: inline-block;
+	width: 45%;
+	box-sizing: border-box;
+}
+
+.vitrineDestaquinho-linkTexto {
+	text-transform: lowercase;
+	line-height: 1.5;
+	display: block;
+	vertical-align: middle;
+}
+
+.vitrineDestaquinho-linkFirula {
+	box-sizing: border-box;
+}
+
+.vitrineDestaquinho-titulo {
+	text-align: left;
+	font-weight: 700;
+	font-size: 1.75em;
+	border-bottom: 2px solid rgba(248,150,93,0.3);
+	padding-bottom: .35em;
+	margin-bottom: 1em;
+}
+
+.vitrineDestaquinho-produto {
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 1.2em;
+}
+
+
+@media screen and (min-width: 510px) {
+	.vitrineDestaquinho-link {
+		width: 30%;
+	}
+}
+
+@media screen and (min-width: 510px) and (max-width: 1019px) {
+	.vitrineDestaquinho-produto.livroNaVitrine {
+		float: left;
+		max-width: none;
+	}
+
+	.vitrineDestaquinho-produto:nth-child(3n + 1){
+		text-align: left;
+	}
+
+	.vitrineDestaquinho-produto:nth-child(3n) {
+		text-align: right;
+	}
+
+	.vitrineDestaquinho-produto:nth-child(3n -1) {
+		text-align: center;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.vitrineDestaquinho-produto:nth-child(4) {
+		clear: left;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.vitrineDestaquinho-linkWrapper {
+		padding-left: 10%;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.vitrineDestaquinho-linkWrapper {
+		padding-left: 16%;
+	}
+}
+
+@media screen and (min-width: 950px) {
+	.vitrineDestaquinho-linkWrapper {
+		padding-left: 20%;
+	}
+}
+
+@media screen and (min-width: 1019px) {
+
+	.vitrineDestaquinho-link {
+		position: absolute;
+		top: 1.6em;
+		right: 5%;
+		width: auto;
+	}
+
+	.vitrineDestaquinho {
+		position: relative;
+	}
+
+	.vitrineDestaquinho-linkWrapper {
+		padding: 0;
+	}
+
+	.vitrineDestaquinho-linkTexto,
+	.vitrineDestaquinho-linkFirula{
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+}
+
+@media screen and (min-width: 1205px) {
+	.vitrineDestaquinho-link {
+		right: calc(50% - 600px);
+	}
+}

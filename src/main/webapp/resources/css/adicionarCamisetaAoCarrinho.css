@@ -1,0 +1,117 @@
+.adicionarCamisetaAoCarrinho {
+  margin-top: 2em;
+  background-color: #f2f0ee;
+  font-family: "open-sans", sans-serif;
+  text-align: center;
+  padding: 1em;
+}
+
+.adicionarCamisetaAoCarrinho-preco {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #6c6a69;
+}
+
+.adicionarCamisetaAoCarrinho-preco-chamada {
+  font-size: .7em;
+	font-weight: 600;
+	color: #b8b3af;
+  margin-right: .3em;
+}
+
+.adicionarCamisetaAoCarrinho-tamanho-radio {
+  height: 0;
+  position: absolute;
+  left: -9999px;
+}
+
+.adicionarCamisetaAoCarrinho-tamanho-radio:checked + .adicionarCamisetaAoCarrinho-tamanho {
+  background-color: #f8965d;
+  color: #fff;
+}
+
+.adicionarCamisetaAoCarrinho-tamanho {
+  display: inline-block;
+  font-family: "open-sans", sans-serif;
+  width: 2em;
+  padding: .5em .2em;
+  margin: 0.8em .2em .5em;
+  background-color: #fff;
+  border-radius: 3px;
+  color: #6c6a69;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.adicionarCamisetaAoCarrinho-tamanho.disabled {
+  color:   #ccc;
+  position: relative;
+  cursor: default;
+}
+
+.adicionarCamisetaAoCarrinho-tamanho.disabled:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 110%;
+  left: -2px;
+  top: 50%;
+  transform: rotate(-39deg);
+  border-top: 2px solid rgba(200, 120, 120, 0.75);
+}
+
+.adicionarCamisetaAoCarrinho-tamanho * {
+  vertical-align: middle;
+  font-weight: 600;
+}
+
+.adicionarCamisetaAoCarrinho-botaoComprar {
+	background-color: #fac459;
+	color: #fbfaf8;
+	text-transform: uppercase;
+	border: none;
+	font-size: .75em;
+	font-weight: 600;
+	line-height: 1;
+	padding: 1em 1.7em;
+	border-radius: 2px;
+	display: block;
+	vertical-align: middle;
+	cursor: pointer;
+  margin: .5em auto 0;
+}
+.adicionarCamisetaAoCarrinho-botaoComprar:hover {
+	background-color: #E4A830;
+}
+
+@media screen and (min-width: 490px) and (max-width: 871px) {
+  .adicionarCamisetaAoCarrinho-preco,
+  .adicionarCamisetaAoCarrinho-preco-chamada,
+  .adicionarCamisetaAoCarrinho-preco-valor,
+  .adicionarCamisetaAoCarrinho-tamanhos,
+  .adicionarCamisetaAoCarrinho-botaoComprar {
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .adicionarCamisetaAoCarrinho-tamanhos {
+    margin: 0 .5em;
+  }
+}
+
+@media screen and (min-width: 872px) {
+  .adicionarCamisetaAoCarrinho {
+    border-radius: 3px;
+  }
+  .adicionarCamisetaAoCarrinho-preco,
+  .adicionarCamisetaAoCarrinho-preco-chamada,
+  .adicionarCamisetaAoCarrinho-preco-valor,
+  .adicionarCamisetaAoCarrinho-tamanhos,
+  .adicionarCamisetaAoCarrinho-botaoComprar {
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .adicionarCamisetaAoCarrinho-tamanhos {
+    margin: 0 .6em;
+  }
+}

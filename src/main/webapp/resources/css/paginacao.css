@@ -1,0 +1,36 @@
+.paginacao {
+  font-family: "open-sans", sans-serif;
+	font-weight: 500;
+  color: #6c6a69;
+}
+
+.paginacao-listItem {
+  display: inline-block;
+}
+
+.paginacao-item {
+  display: inline-block;
+  text-align: center;
+  min-width: 1.15em;
+  margin: 0;
+  padding: .35em .2em;
+  border-radius: 4px;
+  font-size: .75em;
+  vertical-align: middle;
+  border: 1px solid #7c7a79;
+}
+
+
+.paginacao-item-link:hover {
+  border: 1px solid #efa623;
+  background-color: #FFDA97;
+}
+
+.paginacao-item-naoLink {
+  border: none;
+}
+
+.paginacao-item-atual {
+  border: 1px solid #efa623;
+  font-size: .9em;
+}

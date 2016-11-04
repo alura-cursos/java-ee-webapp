@@ -1,0 +1,64 @@
+.caelumGroup {
+	background: #fff;
+	width: 100%;
+	line-height: 1;
+	border-top: 1px solid #e2e1e1;
+}
+
+.caelumGroup-footer,
+.caelumGroup-footer * {
+	box-sizing: border-box;
+}
+
+.caelumGroup-footer {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 50px;
+	background-color: #fff;
+	color: #000;
+}
+
+.caelumGroup-footer p a {
+	text-decoration: none;
+	color: #000;
+}
+
+.caelumGroup-footer .caelumGroup-title {
+	font-size: 17px;
+	font-family: "open-sans", sans-serif;
+	color: #353535;
+}
+
+.caelumGroup-footer ul li {
+	margin-left: 30px;
+	display: inline-block;
+}
+
+.caelumGroup-footer ul li a img {
+	vertical-align: middle;
+}
+
+.caelumGroup-footer .caelumGroup-footer-logo {
+	width: 101px;
+	height: 21px;
+}
+
+@media screen and (max-width: 600px) {
+	.caelumGroup-footer ul {
+		display: none;
+	}
+	.caelumGroup-footer p {
+		width: 100%;
+		text-align: center;
+		padding-bottom: .5em;
+	}
+}

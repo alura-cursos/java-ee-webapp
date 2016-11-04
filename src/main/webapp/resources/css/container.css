@@ -1,0 +1,18 @@
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+.container {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+@media screen and (min-width: 1205px) {
+	.container {
+		padding-left: calc(50% - 600px);
+		padding-right: calc(50% - 600px);
+	}
+}

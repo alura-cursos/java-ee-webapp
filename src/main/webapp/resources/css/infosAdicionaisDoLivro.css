@@ -1,0 +1,85 @@
+.infosAdicionaisDoLivro-info {
+	font-family: "museo", serif;
+	font-size: 1.1em;
+	color: #6c6a69;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.infosAdicionaisDoLivro-info {
+	margin-bottom: 2em;
+}
+
+.infosAdicionaisDoLivro-info-titulo {
+	font-weight: 600;
+	display: inline-block;
+	float: left;
+	clear: left;
+}
+
+.infosAdicionaisDoLivro-info-valor {
+	font-weight: 200;
+	display: inline-block;
+	float: left;
+}
+
+.infosAdicionaisDoLivro-button {
+	display: block;
+	font-family: "open-sans", sans-serif;
+	color: #fbfaf9;
+	font-weight: 600;
+	width: 250px;
+	background-color: #6c6a69;
+	border-radius: 2px;
+	padding: .5em 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+.infosAdicionaisDoLivro-button:hover {
+	background-color: #444;
+}
+
+.infosAdicionaisDoLivro-button + .infosAdicionaisDoLivro-button {
+	margin-top: .7em;
+}
+
+.infosAdicionaisDoLivro-info-titulo,
+.infosAdicionaisDoLivro-info-valor {
+	margin-bottom: .5em;
+	margin-right: .5em;
+}
+.infosAdicionaisDoLivro-info-titulo:not(:first-of-type),
+.infosAdicionaisDoLivro-info-valor:not(:first-of-type) {
+	margin-top: .5em;
+}
+
+@media screen and (min-width: 600px) {
+	.infosAdicionaisDoLivro-info {
+		margin-bottom: 0;
+	}
+
+	.infosAdicionaisDoLivro-info,
+	.infosAdicionaisDoLivro-links {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.infosAdicionaisDoLivro{
+		text-align: justify;
+		line-height: 0;
+	}
+
+	.infoSection-titulo,
+	.infosAdicionaisDoLivro-info,
+	.infosAdicionaisDoLivro-links {
+		line-height: normal;
+	}
+
+	.infosAdicionaisDoLivro:after {
+		content: ".";
+		color: transparent;
+		display: inline-block;
+		width: 100%;
+		font-size: 0;
+	}
+}

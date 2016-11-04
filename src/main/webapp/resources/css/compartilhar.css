@@ -1,0 +1,26 @@
+.compartilhar {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.compartilhar-facebook,
+.compartilhar-twitter {
+	display: block;
+	max-width: 13em;
+	font-family: "open-sans", sans-serif;
+	font-size: 1.2em;
+	font-weight: 400;
+	padding-left: 40px;
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	line-height: 2.7;
+	margin-bottom: .5em;
+	color: #6c6a69;
+}
+.compartilhar-facebook {
+	background-image: url(//cdn.shopify.com/s/files/1/0155/7645/t/212/assets/facebook.png?7329515868859043134);
+}
+
+.compartilhar-twitter {
+	background-image: url(//cdn.shopify.com/s/files/1/0155/7645/t/212/assets/twitter.png?7329515868859043134);
+}

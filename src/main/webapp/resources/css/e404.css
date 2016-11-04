@@ -1,0 +1,41 @@
+.e404 {
+	padding-top: 2em;
+}
+
+.e404-imagem {
+	display: inline-block;
+	vertical-align: middle;
+	width: 75px;
+	margin-right: 10px;
+}
+
+.e404-titulo {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: calc(100% - 85px);
+	font-family: "museo", serif;
+	font-size: 1em;
+	font-weight: 700;
+	color: #6c6a69;
+}
+
+.e404-conteudo {
+	margin-top: 1em;
+	font-family: "museo", serif;
+	font-size: .85em;
+	font-weight: 300;
+	line-height: 1.25;
+	color: #6c6a69;
+}
+
+.e404-link {
+	color: #f8965d;
+	font-family: "museo", serif;
+	text-decoration: underline;
+}
+
+@media screen and (min-width: 590px) {
+	.e404 {
+		margin-top: 3em;
+	}	
+}

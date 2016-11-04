@@ -1,0 +1,76 @@
+.frete-texto {
+	margin-bottom: 1em;
+}
+
+.frete-tabela-unica,
+.frete-tabelas {
+	width: 100%;
+}
+
+.frete-tabela-unica {
+	text-align: left;
+	margin: 0 auto;
+	max-width: 320px;
+}
+
+.frete-tabelas {
+	display: none;
+	text-align: justify;
+}
+
+.frete-tabela {
+	width: 100%;
+	margin-bottom: 1em;
+	font-size: 1.2em;
+}
+
+.frete-tabela-cabecalho {
+	background-color: #E4E1DE;
+	font-family: "open-sans", sans-serif;
+	font-size: .9em;
+	font-weight: 700;
+	border-bottom: 2px solid rgba(108, 105, 105, 0.3);
+	padding: .35em;
+	margin-bottom: .6em;
+}
+
+.frete-tabela-item,
+.frete-tabela-valor {
+	font-family: "museo", serif;
+	font-size: .8em;
+	font-weight: 300;
+	padding: .35em;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.frete-tabela-valor {
+	width: 4em;
+}
+
+@media screen and (min-width: 910px) {
+	.frete-tabelas {
+		display: block;
+	}
+
+	.frete-tabelas:after {
+		content: ".";
+		color: transparent;
+		display: inline-block;
+		width: 100%;
+		height: 0;
+	}
+
+	.frete-tabela {
+		width: auto;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.frete-tabela-item {
+		width: 10em;
+	}
+
+	.frete-tabela-unica {
+		display: none;
+	}
+}

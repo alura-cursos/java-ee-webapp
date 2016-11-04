@@ -1,0 +1,173 @@
+.cabecalhoProdutoLivro {
+	position: relative;
+	overflow: hidden;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	font-family: "open-sans", sans-serif;
+}
+
+.cabecalhoProdutoLivro-titulo {
+	color: #333;
+}
+
+.cabecalhoProdutoLivro-titulo-principal {
+	font-weight: 700;
+	font-size: 2.15em;
+	line-height: 1;
+	display: block;
+}
+
+.cabecalhoProdutoLivro-titulo-sub {
+	font-weight: 500;
+	font-size: 1.5em;
+	line-height: 1.2;
+	margin-top: .35em;
+	display: inline-block;
+}
+
+.cabecalhoProdutoLivro-nomeAutor {
+	font-size: 1em;
+	font-weight: 600;
+	color: #6c6a69;
+	display: inline-block;
+}
+
+.cabecalhoProdutoLivro .imagemLivroNinja {
+	width: 70%;
+	margin: 1.5em auto 0;
+}
+
+.cabecalhoProdutoLivro .adicionarAoCarrinho {
+	margin-top: 2em;
+}
+
+@media screen and (min-width: 415px) {
+	.cabecalhoProdutoLivro {
+		text-align: center;
+		line-height: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.cabecalhoProdutoLivro-tituloEAutor,
+	.cabecalhoProdutoLivro .imagemLivroNinja {
+		line-height: normal;
+		text-align: left;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.cabecalhoProdutoLivro-tituloEAutor {
+		max-width: 65%;
+	}
+
+	.cabecalhoProdutoLivro .imagemLivroNinja {
+		margin: 0;
+		width: 33%;
+	}
+
+}
+
+@media screen and (min-width: 415px) and (max-width: 512px) {
+	.cabecalhoProdutoLivro .imagemLivroNinja-tablet,
+	.cabecalhoProdutoLivro .imagemLivroNinja-cel {
+		display: none;
+	}
+
+	.cabecalhoProdutoLivro .imagemLivroNinja-principal {
+		width: 100%;
+		left: 0;
+	}
+}
+
+@media screen and (min-width: 512px) {
+	.cabecalhoProdutoLivro-tituloEAutor {
+		max-width: 60%;
+		font-size: 1.25em;
+	}
+	.cabecalhoProdutoLivro .imagemLivroNinja {
+		width: 38%;
+	}
+}
+
+@media screen and (min-width: 872px) {
+	.cabecalhoProdutoLivro {
+		padding-top: 3.5em;
+		padding-bottom: 0;
+	}
+
+	.cabecalhoProdutoLivro-tituloEAutor {
+		max-width: 60%;
+	}
+
+	.cabecalhoProdutoLivro-nomeAutor {
+		margin: 1em 0 1.2em;
+	}
+
+	.cabecalhoProdutoLivro .imagemLivroNinja {
+		width: 38%;
+		order: 1;
+	}
+}
+
+@media screen and (min-width: 872px) {
+	.cabecalhoProdutoLivro {
+		align-items: flex-start;
+		overflow: visible;
+	}
+
+	.cabecalhoProdutoLivro-tituloEAutor {
+		max-width: 100%;
+		margin-left: 45%;
+	}
+
+	.cabecalhoProdutoLivro .imagemLivroNinja {
+		position: absolute;
+		left: 5%;
+	}
+
+	.cabecalhoProdutoLivro + .adicionarAoCarrinho {
+		margin-left: 45%;
+		margin-right: 5%;
+	}
+}
+
+@media screen and (min-width: 872px) and (max-width: 1082px) {
+	.cabecalhoProdutoLivro + .adicionarAoCarrinho .adicionarAoCarrinho-tipoDaOferta {
+		display: block;
+		width: auto;
+	}
+
+	.cabecalhoProdutoLivro + .adicionarAoCarrinho .adicionarAoCarrinho-preco {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 1082px) {
+	.cabecalhoProdutoLivro + .adicionarAoCarrinho .adicionarAoCarrinho-tipoDaOferta {
+		width: 5em;
+		margin-right: .5em;
+	}
+}
+
+@media screen and (min-width: 1205px) {
+	.cabecalhoProdutoLivro-tituloEAutor {
+		margin-left: 580px;
+	}
+
+	.cabecalhoProdutoLivro .imagemLivroNinja {
+		width: 540px;
+		left: calc(50% - 600px);
+	}
+
+	.cabecalhoProdutoLivro + .adicionarAoCarrinho {
+		margin-left: calc(50% - 20px);
+		margin-right: calc(50% - 600px);
+		margin-bottom: 2.5em;
+	}
+	.cabecalhoProdutoLivro + .adicionarAoCarrinho .adicionarAoCarrinho-tipoDaOferta {
+		width: 7.5em;
+		margin-right: 1em;
+	}
+}

@@ -1,0 +1,85 @@
+.cabecalhoPrincipal {
+	background-color: #f8965d;
+	position: relative;
+	height: 55px;
+	z-index: 99;
+}
+
+.cabecalhoPrincipal-titulo{
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 0;
+}
+
+.cabecalhoPrincipal-linkTitulo {
+	display: inline-block;
+}
+
+.cabecalhoPrincipal-navegacao {
+	height: 100%;
+	float: right;
+}
+
+.cabecalhoPrincipal-itemNavegacao {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	float: left;
+}
+
+.cabecalhoPrincipal-iconeItemNavegacao {
+	height: 100%;
+	padding: 1em;
+	box-sizing: border-box;
+}
+
+.cabecalhoPrincipal-categoriasEBusca {
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	left: 0;
+}
+
+
+#navegacaoCabecalho:target .cabecalhoPrincipal-escondeCategoriasEBusca,
+#navegacaoCabecalho:not(:target) .cabecalhoPrincipal-mostraCategoriasEBusca {
+	display: inline-block;
+}
+
+#navegacaoCabecalho:not(:target) .cabecalhoPrincipal-escondeCategoriasEBusca,
+#navegacaoCabecalho:target .cabecalhoPrincipal-mostraCategoriasEBusca {
+	display: none;
+}
+
+.cabecalhoPrincipal-escondeCategoriasEBusca {
+	background-color: rgba(0,0,0,.3);
+}
+
+#navegacaoCabecalho:target .colecoesDaCDC,
+#navegacaoCabecalho:target .buscaPrincipal {
+	display: block;
+}
+
+@media screen and (max-width: 624px) {
+	#navegacaoCabecalho:not(:target) .buscaPrincipal,
+	#navegacaoCabecalho:not(:target) .colecoesDaCDC {
+		display: none;
+	}
+}
+@media screen and (min-width: 625px) {
+	.cabecalhoPrincipal {
+		margin-bottom: 2.75em;
+	}
+	#navegacaoCabecalho:not(:target) .cabecalhoPrincipal-escondeCategoriasEBusca,
+	#navegacaoCabecalho:not(:target) .cabecalhoPrincipal-mostraCategoriasEBusca,
+	#navegacaoCabecalho:target .cabecalhoPrincipal-escondeCategoriasEBusca,
+	#navegacaoCabecalho:target .cabecalhoPrincipal-mostraCategoriasEBusca {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.cabecalhoPrincipal {
+		margin-bottom: 0;
+	}
+}

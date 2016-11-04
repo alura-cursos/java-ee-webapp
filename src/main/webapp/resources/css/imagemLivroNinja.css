@@ -1,0 +1,32 @@
+.imagemLivroNinja {
+	box-sizing: border-box;
+	position: relative;
+	max-width: 540px;
+}
+
+.imagemLivroNinja-tablet,
+.imagemLivroNinja-cel {
+	position: absolute;
+	display: block;
+}
+
+.imagemLivroNinja-tablet {
+	bottom: 7.6%;
+	left: 0%;
+	z-index: 1;
+	width: 46%;
+}
+
+.imagemLivroNinja-cel {
+	bottom: -4.9%;
+	top: auto;
+	left: 31%;
+	width: 22%;
+	z-index: 3;
+}
+
+.imagemLivroNinja-principal {
+	width: 58.6%;
+	position: relative;
+	left: 41.4%;
+}

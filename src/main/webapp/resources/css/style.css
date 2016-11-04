@@ -1,0 +1,3566 @@
+.adicionarAoCarrinho {
+  font-family: "open-sans", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.adicionarAoCarrinho-emPreVenda {
+  background-color: #E47C6A;
+  padding: 0.8em 0;
+  width: calc(100% + 4em);
+  margin-left: -2em;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "open-sans", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  color: #FFF;
+  display: block;
+  bottom: 0;
+  font-size: 1em;
+}
+
+.adicionarAoCarrinho-oferta {
+  padding: 1em 0;
+  font-size: .8em;
+  text-align: justify;
+  line-height: 0;
+}
+
+.adicionarAoCarrinho-listaOfertas {
+  padding: 0 5%;
+  background-color: #f2f0ee;
+}
+
+.adicionarAoCarrinho-oferta:after {
+  content: ".";
+  color: transparent;
+  display: inline-block;
+  width: 100%;
+  height: 0;
+}
+
+.adicionarAoCarrinho-oferta + .adicionarAoCarrinho-oferta {
+  border-top: 1px solid rgba(108,105,105, .1);
+}
+
+.adicionarAoCarrinho-infosDaOferta {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-size: 1.25em;
+}
+
+.adicionarAoCarrinho-tipoDaOferta-nome {
+  display: block;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #6c6a69;
+  font-size: 1em;
+}
+
+.adicionarAoCarrinho-tipoDaOferta-detalhe {
+  font-size: .65em;
+  font-weight: 600;
+  color: #b8b3af;
+  display: none;
+}
+
+.adicionarAoCarrinho-preco {
+  font-weight: 700;
+}
+
+.adicionarAoCarrinho-preco-promocao {
+  color: #b8b3af;
+  display: none;
+  font-size: .65em;
+}
+
+.adicionarAoCarrinho-preco-promocao-valor {
+  font-size: 1.4em;
+  color: #6c6a69;
+  font-weight: 600;
+}
+
+.adicionarAoCarrinho-preco-valor {
+  font-size: 1em;
+  color: #6c6a69;
+  line-height: 1.25;
+}
+
+.adicionarAoCarrinho-preco-frete {
+  font-size: .65em;
+  color: #b8b3af;
+  text-decoration: underline;
+}
+
+.adicionarAoCarrinho-botaoComprar {
+  background-color: #fac459;
+  color: #fbfaf8;
+  text-transform: uppercase;
+  border: none;
+  font-size: .75em;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1em 1.7em;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.adicionarAoCarrinho-botaoComprar:hover {
+  background-color: #E4A830;
+}
+
+.adicionarCamisetaAoCarrinho {
+  margin-top: 2em;
+  background-color: #f2f0ee;
+  font-family: "open-sans", sans-serif;
+  text-align: center;
+  padding: 1em;
+}
+
+.adicionarCamisetaAoCarrinho-preco {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #6c6a69;
+}
+
+.adicionarCamisetaAoCarrinho-preco-chamada {
+  font-size: .7em;
+  font-weight: 600;
+  color: #b8b3af;
+  margin-right: .3em;
+}
+
+.adicionarCamisetaAoCarrinho-tamanho-radio {
+  height: 0;
+  position: absolute;
+  left: -9999px;
+}
+
+.adicionarCamisetaAoCarrinho-tamanho-radio:checked + .adicionarCamisetaAoCarrinho-tamanho {
+  background-color: #f8965d;
+  color: #fff;
+}
+
+.adicionarCamisetaAoCarrinho-tamanho {
+  display: inline-block;
+  font-family: "open-sans", sans-serif;
+  width: 2em;
+  padding: .5em .2em;
+  margin: 0.8em .2em .5em;
+  background-color: #fff;
+  border-radius: 3px;
+  color: #6c6a69;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.adicionarCamisetaAoCarrinho-tamanho.disabled {
+  color: #ccc;
+  position: relative;
+  cursor: default;
+}
+
+.adicionarCamisetaAoCarrinho-tamanho.disabled:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 110%;
+  left: -2px;
+  top: 50%;
+  transform: rotate(-39deg);
+  border-top: 2px solid rgba(200, 120, 120, 0.75);
+}
+
+.adicionarCamisetaAoCarrinho-tamanho * {
+  vertical-align: middle;
+  font-weight: 600;
+}
+
+.adicionarCamisetaAoCarrinho-botaoComprar {
+  background-color: #fac459;
+  color: #fbfaf8;
+  text-transform: uppercase;
+  border: none;
+  font-size: .75em;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1em 1.7em;
+  border-radius: 2px;
+  display: block;
+  vertical-align: middle;
+  cursor: pointer;
+  margin: .5em auto 0;
+}
+
+.adicionarCamisetaAoCarrinho-botaoComprar:hover {
+  background-color: #E4A830;
+}
+
+.autoresDoLivro-autor + .autoresDoLivro-autor {
+  margin-top: 2em;
+}
+
+.autoresDoLivro-autor-foto {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #000;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.autoresDoLivro-autor-nome {
+  font-family: "museo", serif;
+  max-width: calc(100% - 80px - .5em);
+  margin-left: .5em;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.2;
+  display: inline-block;
+  vertical-align: middle;
+  color: #6c6a69;
+}
+
+.autoresDoLivro-autor-descricao {
+  clear: both;
+}
+
+.busca {
+  padding-top: 2em;
+}
+
+.busca-termos {
+  font-weight: 400;
+  color: #f8965d;
+}
+
+.busca-item {
+  padding: .5em;
+  margin-bottom: .5em;
+  border-radius: 2px;
+}
+
+.busca-item-imagem {
+  display: inline-block;
+  vertical-align: middle;
+  width: 64px;
+  margin-right: 6px;
+}
+
+.busca-item-titulo {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: calc(100% - 70px);
+  color: #6c6a69;
+  font-family: "open-sans", sans-serif;
+  font-weight: 700;
+  font-size: .9em;
+  line-height: 1.35;
+}
+
+.busca-item-descricao {
+  margin-top: .5em;
+  color: #6c6a69;
+  font-family: "museo", serif;
+  font-weight: 200;
+  font-size: .95em;
+  line-height: 1.5;
+}
+
+.busca-item-descricao-chamada {
+  color: #f8965d;
+  font-family: "museo", serif;
+  text-decoration: underline;
+}
+
+.busca-comentario {
+  margin-bottom: 1em;
+  color: #6c6a69;
+  font-family: "open-sans", sans-serif;
+  font-weight: 600;
+}
+
+.busca-item:nth-child(odd) {
+  background-color: rgba(0,0,0,.03);
+}
+
+.cabecalhoDaColecao {
+  width: 100%;
+  font-family: "open-sans", sans-serif;
+  position: relative;
+  height: 10em;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center top;
+  background-color: #333;
+}
+
+.cabecalhoDaColecao-titulo {
+  position: absolute;
+  padding-left: 5%;
+  top: .64em;
+  font-size: 1.5em;
+  line-height: 5.3em;
+  font-weight: 800;
+  text-align: right;
+  color: #fff;
+  min-width: 300px;
+  max-width: 90%;
+  padding-right: 1em;
+  box-sizing: border-box;
+}
+
+#colecao-livros-de-java,
+#colecao-livros-de-mobile {
+  background-position: center center;
+}
+
+.cabecalhoPrincipal {
+  background-color: #f8965d;
+  position: relative;
+  height: 55px;
+  z-index: 99;
+}
+
+.cabecalhoPrincipal-titulo {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0;
+}
+
+.cabecalhoPrincipal-linkTitulo {
+  display: inline-block;
+}
+
+.cabecalhoPrincipal-navegacao {
+  height: 100%;
+  float: right;
+}
+
+.cabecalhoPrincipal-itemNavegacao {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  float: left;
+}
+
+.cabecalhoPrincipal-iconeItemNavegacao {
+  height: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.cabecalhoPrincipal-categoriasEBusca {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+}
+
+#navegacaoCabecalho:target .cabecalhoPrincipal-escondeCategoriasEBusca,
+#navegacaoCabecalho:not(:target) .cabecalhoPrincipal-mostraCategoriasEBusca {
+  display: inline-block;
+}
+
+#navegacaoCabecalho:not(:target) .cabecalhoPrincipal-escondeCategoriasEBusca,
+#navegacaoCabecalho:target .cabecalhoPrincipal-mostraCategoriasEBusca {
+  display: none;
+}
+
+.cabecalhoPrincipal-escondeCategoriasEBusca {
+  background-color: rgba(0,0,0,.3);
+}
+
+#navegacaoCabecalho:target .colecoesDaCDC,
+#navegacaoCabecalho:target .buscaPrincipal {
+  display: block;
+}
+
+.cabecalhoProdutoLivro {
+  position: relative;
+  overflow: hidden;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-family: "open-sans", sans-serif;
+}
+
+.cabecalhoProdutoLivro-titulo {
+  color: #333;
+}
+
+.cabecalhoProdutoLivro-titulo-principal {
+  font-weight: 700;
+  font-size: 2.15em;
+  line-height: 1;
+  display: block;
+}
+
+.cabecalhoProdutoLivro-titulo-sub {
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 1.2;
+  margin-top: .35em;
+  display: inline-block;
+}
+
+.cabecalhoProdutoLivro-nomeAutor {
+  font-size: 1em;
+  font-weight: 600;
+  color: #6c6a69;
+  display: inline-block;
+}
+
+.cabecalhoProdutoLivro .imagemLivroNinja {
+  width: 70%;
+  margin: 1.5em auto 0;
+}
+
+.cabecalhoProdutoLivro .adicionarAoCarrinho {
+  margin-top: 2em;
+}
+
+.caelumGroup {
+  background: #fff;
+  width: 100%;
+  line-height: 1;
+  border-top: 1px solid #e2e1e1;
+}
+
+.caelumGroup-footer,
+.caelumGroup-footer * {
+  box-sizing: border-box;
+}
+
+.caelumGroup-footer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 50px;
+  background-color: #fff;
+  color: #000;
+}
+
+.caelumGroup-footer p a {
+  text-decoration: none;
+  color: #000;
+}
+
+.caelumGroup-footer .caelumGroup-title {
+  font-size: 17px;
+  font-family: "open-sans", sans-serif;
+  color: #353535;
+}
+
+.caelumGroup-footer ul li {
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.caelumGroup-footer ul li a img {
+  vertical-align: middle;
+}
+
+.caelumGroup-footer .caelumGroup-footer-logo {
+  width: 101px;
+  height: 21px;
+}
+
+.cabecalhoProdutoCamiseta {
+  overflow: hidden;
+  padding-top: 2em;
+  font-family: "open-sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cabecalhoProdutoCamiseta-titulo {
+  color: #6c6a69;
+  margin-bottom: 2em;
+  font-size: 1.1em;
+}
+
+.cabecalhoProdutoCamiseta-titulo-principal {
+  display: block;
+  font-weight: 700;
+  font-size: 2.15em;
+  line-height: 1.2;
+}
+
+.cabecalhoProdutoCamiseta-titulo-sub {
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 1.2;
+  margin-top: .35em;
+}
+
+.cabecalhoProdutoCamiseta-imagem {
+  border-radius: 5px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.cabecalhoProdutoCamiseta-carrinho {
+  text-align: center;
+  width: 100%;
+}
+
+.cabecalhoProdutoCamiseta-carrinho .cabecalhoProdutoCamiseta-titulo {
+  display: none;
+}
+
+.cabecalhoProdutoCamiseta .adicionarAoCarrinho {
+  margin-top: 2em;
+}
+
+.carrinho-texto {
+  font-family: "museo", serif;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #6c6a69;
+  font-weight: 300;
+  margin-top: 1em;
+}
+
+.carrinho-texto-link {
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.categorias {
+  background-color: #F0F0F0;
+}
+
+.categorias-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.categorias-titulo {
+  color: #E0A989;
+  font-family: "open-sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.15em;
+  margin-bottom: 1em;
+  line-height: 1.25;
+}
+
+.categorias-secao {
+  font-size: 0.85em;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 2em;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.categorias-item {
+  padding: .6em .25em;
+  color: #9C9C9C;
+  font-family: "museo", serif;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.categorias-itemLink {
+  display: block;
+  padding: .1em 0;
+}
+
+.colecoesDaCDC {
+  background-color: #6c6a69;
+  text-align: center;
+  overflow: auto;
+  font-size: 1rem;
+  padding: .5em 1em;
+}
+
+.colecoesDaCDC-colecaoItem {
+  display: inline-block;
+  margin: .25em;
+}
+
+.colecoesDaCDC-colecaoLink {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: .9em;
+  font-family: "open-sans", sans-serif;
+  font-weight: 700;
+  padding: .5em;
+  background-color: rgba(0,0,0,.4);
+  border-radius: 2px;
+}
+
+.colecoesDaCDC-colecaoLink:hover {
+  background-color: rgba(0,0,0,.7);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.conteudoDoLivro-link {
+  color: #f8965d;
+  font-family: "museo", serif;
+  text-decoration: underline;
+}
+
+.curadorDaColecao-imagem {
+  width: 3.75em;
+  height: 3.75em;
+  border-radius: 100%;
+  background-color: #000;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.curadorDaColecao-curador {
+  font-family: "open-sans", sans-serif;
+  max-width: calc(100% - 2.8em - .5em);
+  /* 2.8=3.75/1.35 */
+  margin-left: .5em;
+  font-size: 1.35em;
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: middle;
+  color: #6c6a69;
+}
+
+.e404 {
+  padding-top: 2em;
+}
+
+.e404-imagem {
+  display: inline-block;
+  vertical-align: middle;
+  width: 75px;
+  margin-right: 10px;
+}
+
+.e404-titulo {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: calc(100% - 85px);
+  font-family: "museo", serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: #6c6a69;
+}
+
+.e404-conteudo {
+  margin-top: 1em;
+  font-family: "museo", serif;
+  font-size: .85em;
+  font-weight: 300;
+  line-height: 1.25;
+  color: #6c6a69;
+}
+
+.e404-link {
+  color: #f8965d;
+  font-family: "museo", serif;
+  text-decoration: underline;
+}
+
+.faq-item {
+  margin-bottom: 1em;
+}
+
+.faq-pergunta {
+  font-family: "museo", serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  line-height: 1.3;
+  color: #6c6a69;
+}
+
+.faq-resposta {
+  font-size: 1em;
+}
+
+.faq-link {
+  color: #f8965d;
+  font-family: "museo", serif;
+  text-decoration: underline;
+}
+
+.frete-texto {
+  margin-bottom: 1em;
+}
+
+.frete-tabela-unica,
+.frete-tabelas {
+  width: 100%;
+}
+
+.frete-tabela-unica {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+.frete-tabelas {
+  display: none;
+  text-align: justify;
+}
+
+.frete-tabela {
+  width: 100%;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+.frete-tabela-cabecalho {
+  background-color: #E4E1DE;
+  font-family: "open-sans", sans-serif;
+  font-size: .9em;
+  font-weight: 700;
+  border-bottom: 2px solid rgba(108, 105, 105, 0.3);
+  padding: .35em;
+  margin-bottom: .6em;
+}
+
+.frete-tabela-item,
+.frete-tabela-valor {
+  font-family: "museo", serif;
+  font-size: .8em;
+  font-weight: 300;
+  padding: .35em;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.frete-tabela-valor {
+  width: 4em;
+}
+
+.homeCall {
+  padding-top: .8em;
+  padding-bottom: .8em;
+  background-color: #FAC459;
+  font-family: "open-sans", sans-serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #fff;
+  text-align: center;
+}
+
+.imagemLivroNinja {
+  box-sizing: border-box;
+  position: relative;
+  max-width: 540px;
+}
+
+.imagemLivroNinja-tablet,
+.imagemLivroNinja-cel {
+  position: absolute;
+  display: block;
+}
+
+.imagemLivroNinja-tablet {
+  bottom: 7.6%;
+  left: 0%;
+  z-index: 1;
+  width: 46%;
+}
+
+.imagemLivroNinja-cel {
+  bottom: -4.9%;
+  top: auto;
+  left: 31%;
+  width: 22%;
+  z-index: 3;
+}
+
+.imagemLivroNinja-principal {
+  width: 58.6%;
+  position: relative;
+  left: 41.4%;
+}
+
+.infoSection {
+  padding-top: 2em;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.infoSection-titulo {
+  font-family: "open-sans", sans-serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  width: 100%;
+  border-bottom: 2px solid rgba(108, 105, 105, 0.3);
+  padding-bottom: .35em;
+  margin-bottom: .6em;
+  color: #6c6a69;
+}
+
+.infoSection-texto {
+  font-family: "museo", serif;
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #6c6a69;
+  font-weight: 300;
+  margin-top: 1em;
+}
+
+.infosAdicionaisDoLivro-info {
+  font-family: "museo", serif;
+  font-size: 1.1em;
+  color: #6c6a69;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.infosAdicionaisDoLivro-info {
+  margin-bottom: 2em;
+}
+
+.infosAdicionaisDoLivro-info-titulo {
+  font-weight: 600;
+  display: inline-block;
+  float: left;
+  clear: left;
+}
+
+.infosAdicionaisDoLivro-info-valor {
+  font-weight: 200;
+  display: inline-block;
+  float: left;
+}
+
+.infosAdicionaisDoLivro-button {
+  display: block;
+  font-family: "open-sans", sans-serif;
+  color: #fbfaf9;
+  font-weight: 600;
+  width: 250px;
+  background-color: #6c6a69;
+  border-radius: 2px;
+  padding: .5em 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.infosAdicionaisDoLivro-button:hover {
+  background-color: #444;
+}
+
+.infosAdicionaisDoLivro-button + .infosAdicionaisDoLivro-button {
+  margin-top: .7em;
+}
+
+.infosAdicionaisDoLivro-info-titulo,
+.infosAdicionaisDoLivro-info-valor {
+  margin-bottom: .5em;
+  margin-right: .5em;
+}
+
+.infosAdicionaisDoLivro-info-titulo:not(:first-of-type),
+.infosAdicionaisDoLivro-info-valor:not(:first-of-type) {
+  margin-top: .5em;
+}
+
+.livroNaVitrine {
+  width: 45%;
+  max-width: 205px;
+}
+
+.livroNaVitrine-link {
+  display: inline-block;
+  width: 100%;
+  max-width: 205px;
+  text-align: center;
+}
+
+.livroNaVitrine-imagem {
+  display: inline-block;
+  width: 100%;
+  box-shadow: 3px 3px 5px rgba(219, 215, 205, 0.3);
+}
+
+.livroNaVitrine-imagemContainer {
+  margin-bottom: .35em;
+  position: relative;
+}
+
+.livroNaVitrine-faixaPrevenda {
+  position: absolute;
+  background-color: #E47C6A;
+  padding: 1em 0;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "open-sans", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  color: #FFF;
+  display: block;
+  bottom: 0;
+  font-size: 1.25em;
+}
+
+.livroNaVitrine-imagemContainer:after {
+  content: "";
+  display: block;
+  height: 0;
+  background-color: transparent;
+  width: 80%;
+  position: absolute;
+  bottom: 10px;
+  left: 10%;
+  z-index: 2;
+  font-family: "open-sans", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1;
+  color: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.livroNaVitrine-imagemContainer:before {
+  content: "";
+  display: block;
+  height: 0;
+  background-color: transparent;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.livroNaVitrine:hover .livroNaVitrine-imagemContainer:before {
+  content: " ";
+  height: 3.75em;
+  background-color: rgba(255,255,255,0.95);
+}
+
+.livroNaVitrine:hover .livroNaVitrine-imagemContainer:after {
+  content: "COMPRAR";
+  height: 2.5em;
+  border-radius: 2px;
+  padding: .8em 0;
+  background-color: #fac459;
+  box-shadow: 0 1px 0 0 #eebc58;
+  box-sizing: border-box;
+}
+
+.livroNaVitrine:hover .livroNaVitrine-imagemContainer:before,
+.livroNaVitrine:hover .livroNaVitrine-imagemContainer:after {
+  -webkit-transition: all ease-in .2s;
+  -moz-transition: all ease-in .2s;
+  transition: all ease-in .2s;
+}
+
+.livroNaVitrine-nome {
+  position: relative;
+  font-family: "open-sans", sans-serif;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #6c6a69;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  height: 2.5em;
+  margin-top: 1em;
+}
+
+.logo {
+  width: 119px;
+  height: 55px;
+}
+
+.logo-casaDoCodigo {
+  fill: #FBFAF9;
+}
+
+.logo-slogan {
+  fill: #F9E8E1;
+  opacity: 0.5;
+}
+
+.logo-backgroundSimbolo {
+  visibility: hidden;
+}
+
+.logo-simbolo {
+  visibility: hidden;
+}
+
+.logo-text {
+  -webkit-transform: translate(-77px, 0);
+  transform: translate(-77px, 0);
+}
+
+.paginacao {
+  font-family: "open-sans", sans-serif;
+  font-weight: 500;
+  color: #6c6a69;
+}
+
+.paginacao-listItem {
+  display: inline-block;
+}
+
+.paginacao-item {
+  display: inline-block;
+  text-align: center;
+  min-width: 1.15em;
+  margin: 0;
+  padding: .35em .2em;
+  border-radius: 4px;
+  font-size: .75em;
+  vertical-align: middle;
+  border: 1px solid #7c7a79;
+}
+
+.paginacao-item-link:hover {
+  border: 1px solid #efa623;
+  background-color: #FFDA97;
+}
+
+.paginacao-item-naoLink {
+  border: none;
+}
+
+.paginacao-item-atual {
+  border: 1px solid #efa623;
+  font-size: .9em;
+}
+
+.produtoEmPreVenda-mensagem {
+  background-color: #E47C6A;
+  padding: 0.8em 1.5em;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  font-family: "open-sans", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #FFF;
+  display: block;
+  bottom: 0;
+  font-size: 1.1em;
+}
+
+.recomendacoes {
+  margin-top: 2em;
+  width: 100%;
+  background-color: #f2f0ee;
+  padding-bottom: 1em;
+}
+
+.recomendacoes-livros {
+  text-align: center;
+}
+
+.recomendacoes-livros > * {
+  vertical-align: middle;
+}
+
+.recomendacoes-livro {
+  display: inline-block;
+}
+
+.recomendacoes-livro {
+  width: 42%;
+}
+
+.recomendacoes-plus {
+  display: inline-block;
+  box-sizing: border-box;
+  padding-bottom: 1em;
+  text-align: center;
+  font-size: 3em;
+  font-family: "open-sans", sans-serif;
+  color: #b8b3af;
+  font-weight: 800;
+}
+
+.recomendacoes-ofertas {
+  display: inline-block;
+  width: 100%;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background-color: #fbfaf9;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.rodape {
+  background-color: #fbfaf9;
+  font-size: 0.9rem;
+  overflow: hidden;
+  padding: 3em 0;
+}
+
+.rodape-titulo {
+  color: #f8965d;
+  font-family: "open-sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.15em;
+  margin-bottom: 1em;
+  line-height: 1.25;
+}
+
+.rodape-tituloSecundario {
+  margin-top: 2em;
+}
+
+.rodape-secaoOutros {
+  min-width: 293px;
+}
+
+.rodape-secaoLinks {
+  margin-bottom: 2em;
+}
+
+.rodape-item {
+  padding: .6em .25em;
+  color: #6c6a69;
+  font-family: "museo", serif;
+  font-weight: 500;
+}
+
+.rodape-itemLink {
+  display: block;
+  padding: .1em 0;
+}
+
+.rodape-item .compartilhar-facebook,
+.rodape-item .compartilhar-twitter {
+  color: #6c6a69;
+  font-family: "museo", serif;
+  font-weight: 500;
+}
+
+.rodape-logo {
+  display: none;
+}
+
+.rodape-breadcrumbs {
+  display: none;
+}
+
+.rodape-formularioDaNewsletter {
+  position: relative;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: .2em;
+}
+
+.rodape-campoDaNewsletter {
+  border: none;
+  background: none;
+  border-radius: 2px;
+  height: 35px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 5em;
+  margin-right: 3px;
+  text-indent: .2em;
+  font-size: 1.2em;
+  color: #6C6A69;
+  font-size: .9em;
+}
+
+.rodape-botaoDaNewsletter {
+  position: absolute;
+  top: .3em;
+  right: .3em;
+  font-family: "museo", serif;
+  color: #fff;
+  font-size: 1.2em;
+  background-color: #333;
+  border: none;
+  border-radius: 2px;
+  width: 50px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.rodape-botaoDaNewsletter:hover {
+  background-color: #666;
+}
+
+.rodape-formaDePagamento:nth-child(n+2) {
+  margin-top: 1em;
+}
+
+.rodape-titulo-espacador {
+  display: none;
+}
+
+.sacola {
+  display: inline-block;
+  background-color: #FFF;
+  width: 55px;
+  text-align: center;
+  position: relative;
+}
+
+.sacola-contador {
+  font-family: "museo", serif;
+  font-weight: 700;
+  text-decoration: none;
+  fill: #ed9764;
+  font-size: .8em;
+}
+
+.sacola-icone {
+  position: absolute;
+  top: 12px;
+  left: 17px;
+}
+
+.sobre-imagem {
+  display: block;
+  margin: 0 auto;
+}
+
+.sobre-editor {
+  font-size: 0;
+  margin-bottom: 1rem;
+}
+
+.sobre-editor-imagem {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+.sobre-editor-nome {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: calc(100% - 70px);
+  font-family: "museo", serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #6c6a69;
+}
+
+.sobre-editor-linkTwitter {
+  display: block;
+  font-size: .8em;
+  font-weight: 400;
+  color: #f8965d;
+  text-decoration: underline;
+}
+
+.sobre-editor-descricao {
+  font-size: .9rem;
+}
+
+.sumario {
+  font-family: "museo", serif;
+  padding-top: 2em;
+}
+
+/* Sumir com o nome do livro */
+
+.sumario header {
+  display: none;
+}
+
+.sumario a {
+  color: #f8965d;
+  text-decoration: underline;
+}
+
+/* Cabecalhos */
+
+.sumario #tubaina:first-child .chapter h1,
+.sumario .toc h1,
+.sumario .chapterHeader {
+  font-family: "open-sans", sans-serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-align: left;
+  width: 100%;
+  border-bottom: 2px solid rgba(108, 105, 105, 0.3);
+  padding-bottom: .35em;
+  margin-bottom: .6em;
+  color: #6c6a69;
+}
+
+/* Cabecalhos - Numeral dos capitulos */
+
+.sumario .chapterHeader span {
+  margin-left: .5em;
+}
+
+/* Espacamento entre secoes */
+
+.sumario .chapter,
+.sumario .toc {
+  margin-bottom: 1em;
+}
+
+/* TOC */
+
+.sumario .toc {
+  text-align: left;
+}
+
+.sumario .toc > ul {
+  font-family: "open-sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.sumario .toc > ul > li {
+  font-weight: 600;
+}
+
+.sumario .toc ul ul {
+  margin-bottom: .5em;
+}
+
+.sumario .toc ul ul li {
+  font-size: .9em;
+  font-weight: 400;
+  padding-left: 1.5em;
+}
+
+/* Capitulos */
+
+.sumario .chapter {
+  text-align: center;
+}
+
+.sumario .chapter h1,
+.sumario .chapter h2,
+.sumario .chapter h3,
+.sumario .chapter h4 {
+  font-family: "open-sans", sans-serif;
+  font-weight: 600;
+  text-align: left;
+}
+
+.sumario .chapter h1 {
+  font-size: 1.4em;
+}
+
+.sumario .chapter h2 {
+  font-size: 1.15em;
+  margin-bottom: .6em;
+  text-indent: 1em;
+}
+
+.sumario .chapter h3,
+.sumario .chapter h4 {
+  margin-bottom: .6em;
+}
+
+.sumario img {
+  max-width: 100%;
+}
+
+.sumario .chapter p {
+  font-weight: 300;
+  line-height: 1.5;
+  padding-bottom: 1em;
+  text-align: left;
+}
+
+.sumario pre {
+  font-family: monospace;
+  background-color: #eee;
+  margin: 1em 0;
+  text-align: left;
+  overflow: auto;
+  padding: .2em .2em .4em;
+}
+
+.sumario i {
+  font-weight: 300;
+  font-size: .9em;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.sumario .chapter ul,
+.sumario .chapter ol {
+  text-align: left;
+  font-weight: 400;
+  font-size: .85em;
+  margin-bottom: 2em;
+  padding-left: 2em;
+  line-height: 1.5;
+}
+
+.sumario .chapter ul {
+  list-style: initial;
+}
+
+.sumario .chapter ol {
+  list-style: decimal;
+}
+
+/* SYNTAX HIGHLIGHTING */
+
+.highlight span {
+  line-height: 1.2em;
+}
+
+.highlight .lineno {
+  background-color: rgba(0,0,0,.05);
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.highlight .hll {
+  background-color: #ffffcc;
+}
+
+.highlight .c {
+  color: #3F7F5F;
+}
+
+/* Comment */
+
+.highlight .err {
+  border: 1px solid #FF0000;
+}
+
+/* Error */
+
+.highlight .k {
+  color: #7F0055;
+  font-weight: bold;
+}
+
+/* Keyword */
+
+.highlight .o {
+  color: #000000;
+}
+
+/* Operator */
+
+.highlight .cm {
+  color: #3F5FBF;
+}
+
+/* Comment.Multiline */
+
+.highlight .cp {
+  color: #606060;
+  font-style: italic;
+}
+
+/* Comment.Preproc */
+
+.highlight .c1 {
+  color: #3F7F5F;
+}
+
+/* Comment.Single */
+
+.highlight .cs {
+  color: #3F7F5F;
+}
+
+/* Comment.Special */
+
+.highlight .ge {
+  font-style: italic;
+}
+
+/* Generic.Emph */
+
+.highlight .gh {
+  font-weight: bold;
+}
+
+/* Generic.Heading */
+
+.highlight .gp {
+  font-weight: bold;
+}
+
+/* Generic.Prompt */
+
+.highlight .gs {
+  font-weight: bold;
+}
+
+/* Generic.Strong */
+
+.highlight .gu {
+  font-weight: bold;
+}
+
+/* Generic.Subheading */
+
+.highlight .kc {
+  color: #7F0055;
+  font-weight: bold;
+}
+
+/* Keyword.Constant */
+
+.highlight .kd {
+  color: #7F0055;
+  font-weight: bold;
+}
+
+/* Keyword.Declaration */
+
+.highlight .kn {
+  color: #7F0055;
+  font-weight: bold;
+}
+
+/* Keyword.Namespace */
+
+.highlight .kp {
+  color: #f00000;
+  font-weight: bold;
+}
+
+/* Keyword.Pseudo */
+
+.highlight .kr {
+  color: #7F0055;
+  font-weight: bold;
+}
+
+/* Keyword.Reserved */
+
+.highlight .kt {
+  color: #7F0055;
+  font-weight: bold;
+}
+
+/* Keyword.Type */
+
+.highlight .m {
+  color: #000000;
+}
+
+/* Literal.Number */
+
+.highlight .s {
+  color: #2A00FF;
+}
+
+/* Literal.String */
+
+.highlight .na {
+  color: #000000;
+}
+
+/* Name.Attribute */
+
+.highlight .nc {
+  color: #000000;
+}
+
+/* Name.Class */
+
+.highlight .nd {
+  color: #646464;
+}
+
+/* Name.Decorator */
+
+.highlight .ni {
+  color: #000000;
+}
+
+/* Name.Entity */
+
+.highlight .ne {
+  color: #000000;
+}
+
+/* Name.Exception */
+
+.highlight .nf {
+  color: #000000;
+}
+
+/* Name.Function */
+
+.highlight .nn {
+  color: #000000;
+}
+
+/* Name.Namespace */
+
+.highlight .nt {
+  color: #7F0055;
+  font-weight: bold;
+}
+
+/* Name.Tag */
+
+.highlight .ow {
+  color: #000000;
+}
+
+/* Operator.Word */
+
+.highlight .w {
+  color: #bbbbbb;
+}
+
+/* Text.Whitespace */
+
+.highlight .mf {
+  color: #000000;
+}
+
+/* Literal.Number.Float */
+
+.highlight .mh {
+  color: #000000;
+}
+
+/* Literal.Number.Hex */
+
+.highlight .mi {
+  color: #000000;
+}
+
+/* Literal.Number.Integer */
+
+.highlight .mo {
+  color: #000000;
+}
+
+/* Literal.Number.Oct */
+
+.highlight .sb {
+  color: #2A00FF;
+}
+
+/* Literal.String.Backtick */
+
+.highlight .sc {
+  color: #2A00FF;
+}
+
+/* Literal.String.Char */
+
+.highlight .sd {
+  color: #2A00FF;
+}
+
+/* Literal.String.Doc */
+
+.highlight .s2 {
+  color: #2A00FF;
+}
+
+/* Literal.String.Double */
+
+.highlight .se {
+  color: #2A00FF;
+}
+
+/* Literal.String.Escape */
+
+.highlight .sh {
+  color: #2A00FF;
+}
+
+/* Literal.String.Heredoc */
+
+.highlight .si {
+  color: #2A00FF;
+}
+
+/* Literal.String.Interpol */
+
+.highlight .sx {
+  color: #2A00FF;
+}
+
+/* Literal.String.Other */
+
+.highlight .sr {
+  color: #2A00FF;
+}
+
+/* Literal.String.Regex */
+
+.highlight .s1 {
+  color: #2A00FF;
+}
+
+/* Literal.String.Single */
+
+.highlight .ss {
+  color: #2A00FF;
+}
+
+/* Literal.String.Symbol */
+
+.highlight .il {
+  color: #000000;
+}
+
+/* Literal.Number.Integer.Long */
+
+/* END SYNTAX HIGHLIGHTING */
+
+.tamanhoDasCamisetas {
+  font-family: "open-sans", sans-serif;
+  color: #6c6a69;
+  background-color: #f2f0ee;
+  text-align: center;
+  margin-top: 2px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 2em;
+}
+
+.tamanhoDasCamisetas-mostrar {
+  display: block;
+  font-size: .9em;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.tamanhoDasCamisetas-tabela {
+  width: auto;
+  margin: 2em auto 0 auto;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.tamanhoDasCamisetas-cabecalho {
+  font-size: .9em;
+  font-weight: 700;
+}
+
+.tamanhoDasCamisetas-linha * {
+  padding: .6em 1em;
+  border: 2px solid #f2f0ee;
+}
+
+.tamanhoDasCamisetas-tamanho {
+  font-size: .9em;
+  font-weight: 700;
+}
+
+.tamanhoDasCamisetas-medida {
+  font-size: .9em;
+  padding: .2em;
+}
+
+#tamanhoDasCamisetas-mostrarCheckbox {
+  position: absolute;
+  left: -9999px;
+}
+
+#tamanhoDasCamisetas-mostrarCheckbox:not(:checked) ~ .tamanhoDasCamisetas-tabela {
+  display: none;
+}
+
+.vitrineDaColecao {
+  font-size: 1rem;
+  background-color: #fbfaf9;
+  padding-top: 2em;
+}
+
+.vitrineDaColecao-link,
+.vitrineDaColecao-titulo {
+  font-family: "open-sans", sans-serif;
+  color: #f8965d;
+  line-height: 1;
+}
+
+.vitrineDaColecao-produto {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 2.5em;
+}
+
+.vitrineDaColecao-link {
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+  display: inline-block;
+  padding: .3em;
+}
+
+.vitrineDaColecao-linkTexto {
+  text-transform: lowercase;
+  line-height: 1.5;
+  display: block;
+}
+
+.vitrineDaColecao-titulo {
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.75em;
+  border-bottom: 2px solid;
+  padding-bottom: .35em;
+  margin-bottom: 1em;
+}
+
+.vitrineDestaquinho {
+  font-size: 1rem;
+  background-color: #fbfaf9;
+  padding-top: 1.5em;
+}
+
+.vitrineDestaquinho-link,
+.vitrineDestaquinho-titulo {
+  font-family: "open-sans", sans-serif;
+  color: #f8965d;
+  line-height: 1;
+}
+
+.vitrineDestaquinho-lista {
+  text-align: justify;
+  line-height: 0;
+}
+
+.vitrineDestaquinho-lista:after {
+  content: ".";
+  color: transparent;
+  display: inline-block;
+  height: 0;
+  width: 100%;
+}
+
+.vitrineDestaquinho-link {
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+  display: inline-block;
+  width: 45%;
+  box-sizing: border-box;
+}
+
+.vitrineDestaquinho-linkTexto {
+  text-transform: lowercase;
+  line-height: 1.5;
+  display: block;
+  vertical-align: middle;
+}
+
+.vitrineDestaquinho-linkFirula {
+  box-sizing: border-box;
+}
+
+.vitrineDestaquinho-titulo {
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.75em;
+  border-bottom: 2px solid rgba(248,150,93,0.3);
+  padding-bottom: .35em;
+  margin-bottom: 1em;
+}
+
+.vitrineDestaquinho-produto {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 1.2em;
+}
+
+.buscaDoRodape {
+  width: 100%;
+  background-color: #333;
+  padding: 40px 1em;
+  box-sizing: border-box;
+  margin-top: 2em;
+}
+
+.buscaDoRodape-formulario {
+  margin: 0 auto;
+  display: block;
+}
+
+.buscaDoRodape-rotuloEscondido {
+  display: none;
+}
+
+.buscaDoRodape-rotulo {
+  color: #fff;
+  display: block;
+  font-family: "open-sans", sans-serif;
+  font-weight: 800;
+  margin: 0 auto.4em;
+  font-size: 1.45em;
+  width: 100%;
+  max-width: 700px;
+  line-height: 1.2;
+}
+
+.buscaDoRodape-fieldset {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+  border-radius: 2px;
+  line-height: 0;
+  text-align: justify;
+  padding: .2em;
+}
+
+.buscaDoRodape-fieldset:after {
+  content: '.';
+  display: inline-block;
+  width: 100%;
+  color: transparent;
+  height: 0;
+}
+
+.buscaDoRodape-campo {
+  font-family: "museo", serif;
+  font-weight: 300;
+  -webkit-appearance: none;
+  border: none;
+  height: 50px;
+  width: 70%;
+  font-size: 1.3em;
+  display: inline-block;
+  background: none;
+  vertical-align: middle;
+  color: #6c6a69;
+}
+
+.buscaDoRodape-enviar {
+  display: inline-block;
+  font-family: "museo", serif;
+  background-image: url(//cdn.shopify.com/s/files/1/0155/7645/t/214/assets/search.svg?9766601392841079263);
+  line-height: 0;
+  color: transparent;
+  background-color: #f8965d;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+  border: none;
+  border-radius: 2px;
+  width: 30%;
+  max-width: 77px;
+  height: 50px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.buscaDoRodape-enviar:hover {
+  background-color: #DA6B2A;
+}
+
+.buscaPrincipal {
+  background-color: #333;
+  font-size: 1rem;
+  padding: 1em .5em;
+  text-align: center;
+}
+
+.buscaPrincipal > * {
+  vertical-align: middle;
+}
+
+.buscaPrincipal-label {
+  display: none;
+}
+
+.buscaPrincipal-campo {
+  font-family: "open-sans", sans-serif;
+  font-size: inherit;
+  -webkit-appearance: none;
+  border: none;
+  display: inline-block;
+  width: 80%;
+  box-sizing: border-box;
+  padding: .5em;
+  border-radius: 3px;
+  vertical-align: middle;
+  color: #6c6a69;
+  font-size: .85em;
+}
+
+.buscaPrincipal-submit {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: .9em;
+  font-family: "open-sans", sans-serif;
+  font-weight: 700;
+  padding: .5em;
+  border: none;
+  background-color: rgba(0,0,0,.4);
+  border-radius: 2px;
+  margin-left: .5em;
+  cursor: pointer;
+}
+
+.buscaPrincipal-submit:hover {
+  background-color: rgba(0,0,0,.7);
+}
+
+.comentariosDoLivro {
+  font-size: 1rem;
+}
+
+.comentariosDoLivro-lista {
+  color: #6c6a69;
+}
+
+.comentariosDoLivro-lista-quoteItem {
+  width: 100%;
+  text-align: center;
+  margin: .5em 0;
+  line-height: 0;
+}
+
+.comentariosDoLivro-lista-item-imagem {
+  width: 60px;
+  border-radius: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.comentariosDoLivro-lista-item-autor {
+  color: #6c6a69;
+  max-width: calc(100% - 60px - .5em);
+  margin-left: .5em;
+  font-family: "open-sans", sans-serif;
+  font-weight: 700;
+  font-size: .95em;
+  line-height: 1.35;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.comentariosDoLivro-lista-item-autor-twitter {
+  display: block;
+  font-weight: 400;
+  color: #f8965d;
+}
+
+.comentariosDoLivro-lista-item-comentario {
+  color: #6c6a69;
+  font-family: "museo", serif;
+  font-weight: 200;
+  margin-top: .5em;
+  font-size: .95em;
+  line-height: 1.5;
+}
+
+.comentariosDoLivro-lista-quoteItem:last-child {
+  display: none;
+}
+
+.compartilhar {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.compartilhar-facebook,
+.compartilhar-twitter {
+  display: block;
+  max-width: 13em;
+  font-family: "open-sans", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  padding-left: 40px;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  line-height: 2.7;
+  margin-bottom: .5em;
+  color: #6c6a69;
+}
+
+.compartilhar-facebook {
+  background-image: url(//cdn.shopify.com/s/files/1/0155/7645/t/214/assets/facebook.png?9766601392841079263);
+}
+
+.compartilhar-twitter {
+  background-image: url(//cdn.shopify.com/s/files/1/0155/7645/t/214/assets/twitter.png?9766601392841079263);
+}
+
+.formularioDoCarrinho {
+  width: 110%;
+  margin-left: -5%;
+}
+
+.formularioDoCarrinho-tabela {
+  background-color: #F2F0EE;
+  text-align: center;
+  width: 100%;
+}
+
+.formularioDoCarrinho-cabecalho {
+  background-color: #E4E1DE;
+  border-bottom: 1px solid #D5D3D1;
+  padding-bottom: .35em;
+  margin-bottom: .6em;
+  font-family: "open-sans", sans-serif;
+  font-size: .9em;
+  font-weight: 700;
+}
+
+.formularioDoCarrinho-cabecalho-item {
+  padding: .5em 0;
+}
+
+.formularioDoCarrinho-item {
+  font-size: .8em;
+  font-family: "museo", serif;
+  padding: .2em;
+  vertical-align: middle;
+}
+
+.formularioDoCarrinho-item-imagem {
+  width: 35px;
+}
+
+.formularioDoCarrinho-item-quantidade {
+  max-width: 2.3em;
+  text-align: center;
+}
+
+.formularioDoCarrinho-item-remover-imagem {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.formularioDoCarrinho-rodape {
+  background-color: #E4E1DE;
+  border-top: 1px solid #D5D3D1;
+  font-family: "open-sans", sans-serif;
+  font-size: .9em;
+  font-weight: 700;
+}
+
+.formularioDoCarrinho-rodape-item {
+  padding: .5em 0;
+  vertical-align: middle;
+}
+
+.formularioDoCarrinho-finalizar {
+  text-align: left;
+  padding-left: .5em;
+}
+
+.formularioDoCarrinho-finalizar-botao {
+  font-family: "open-sans", sans-serif;
+  font-size: 1em;
+  font-weight: 800;
+  color: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 9px 0 2px;
+  border-radius: 2px;
+  display: block;
+  background-color: #fac459;
+  border: none;
+  cursor: pointer;
+}
+
+.formularioDoCarrinho-finalizar-botao:hover {
+  background-color: #E4A830;
+}
+
+.formularioDoCarrinho-finalizar-botao::before {
+  content: ' ';
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-image: url(//cdn.shopify.com/s/files/1/0155/7645/t/214/assets/cart.png?9766601392841079263);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: 50%;
+  -webkit-background-size: 80%;
+  background-size: 80%;
+  vertical-align: middle;
+}
+
+.formularioDoCarrinho-finalizar-botao-texto {
+  display: none;
+}
+
+.formularioDoCarrinho-atualizar {
+  background-image: url(//cdn.shopify.com/s/files/1/0155/7645/t/214/assets/refresh.png?9766601392841079263);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: transparent;
+  background-size: 75%;
+  width: 24px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.vitrineDestacao {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-image: url(//cdn.shopify.com/s/files/1/0155/7645/t/214/assets/fundoDestacao.svg?9766601392841079263);
+  background-size: 10em;
+  background-color: #3a3a3a;
+}
+
+.vitrineDestacao-lista {
+  font-size: 0;
+}
+
+.vitrineDestacao-item {
+  font-size: 1rem;
+}
+
+.vitrineDestacao-item-nome {
+  color: #fff;
+}
+
+.vitrineDestacao-item-maisDetalhes {
+  font-family: "open-sans", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1;
+  color: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 12px 0;
+  border-radius: 2px;
+  display: block;
+  width: 100%;
+  max-width: 210px;
+  margin: 1em auto 0;
+  background-color: #fac459;
+  box-shadow: 0 1px 0 0 #eebc58;
+}
+
+.vitrineDestacao-item:hover .vitrineDestacao-item-maisDetalhes {
+  background-color: #E4A830;
+}
+
+.vitrineDestacao-itemPrincipal {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.vitrineDestacao-itemPrincipal .vitrineDestacao-item-info {
+  display: block;
+  width: 100%;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.vitrineDestacao-itemPrincipal .vitrineDestacao-item-nome {
+  font-family: "open-sans", sans-serif;
+  line-height: 1.25;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.vitrineDestacao-itemPrincipal .vitrineDestacao-item-imagem {
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.vitrineDestacao-itemSecundario {
+  display: inline-block;
+  width: 45%;
+}
+
+.vitrineDestacao-itemSecundario .vitrineDestacao-item-imagem {
+  box-shadow: 3px 3px 5px #383838;
+}
+
+@media (min-width: 300px) {
+  .categorias-secao {
+    width: 45%;
+  }
+}
+
+@media (min-width: 320px) {
+  .logo {
+    width: 173px;
+  }
+
+  .logo-backgroundSimbolo {
+    fill: #FBFAF9;
+  }
+
+  .logo-simbolo {
+    visibility: visible;
+    -webkit-transform: translate(-18px, 0);
+    transform: translate(-18px, 0);
+  }
+
+  .logo-text {
+    -webkit-transform: translate(-35px, 0);
+    transform: translate(-35px, 0);
+  }
+
+  .logo-simboloParteInterna {
+    fill: #FBFAF9;
+  }
+
+  .logo-simboloParteExterna {
+    fill: #D5BEB2;
+  }
+}
+
+@media (min-width: 340px) {
+  .buscaDoRodape-campo {
+    width: calc(100% - 84px);
+  }
+}
+
+@media (min-width: 381px) {
+  .formularioDoCarrinho-finalizar-botao-texto {
+    display: inline;
+  }
+}
+
+@media (min-width: 415px) {
+  .cabecalhoProdutoLivro {
+    text-align: center;
+    line-height: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cabecalhoProdutoLivro-tituloEAutor,
+  .cabecalhoProdutoLivro .imagemLivroNinja {
+    line-height: normal;
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .cabecalhoProdutoLivro-tituloEAutor {
+    max-width: 65%;
+  }
+
+  .cabecalhoProdutoLivro .imagemLivroNinja {
+    margin: 0;
+    width: 33%;
+  }
+}
+
+@media (min-width: 430px) {
+  .adicionarAoCarrinho-oferta {
+    font-size: 1em;
+  }
+
+  .adicionarAoCarrinho-tipoDaOferta-nome {
+    display: inline-block;
+  }
+
+  .adicionarAoCarrinho-tipoDaOferta-detalhe {
+    display: block;
+  }
+
+  .adicionarAoCarrinho-preco-promocao {
+    display: inline-block;
+  }
+
+  .logo-simbolo {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .logo-text {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .logo {
+    width: 208px;
+  }
+
+  .logo-backgroundSimbolo {
+    visibility: visible;
+  }
+
+  .logo-simboloParteInterna {
+    fill: #FAC459;
+  }
+
+  .logo-simboloParteExterna {
+    fill: #F8965D;
+  }
+}
+
+@media (min-width: 475px) {
+  .rodape-secao {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .rodape-secaoLinks .rodape-titulo-espacador {
+    width: 50px;
+    display: inherit;
+  }
+}
+
+@media (min-width: 510px) {
+  .cabecalhoDaColecao-titulo {
+    padding-right: 1.5em;
+    font-size: 2em;
+    line-height: 4em;
+    top: .47em;
+  }
+
+  .livroNaVitrine {
+    width: 30%;
+  }
+
+  .vitrineDaColecao-lista {
+    font-size: 0;
+  }
+
+  .vitrineDaColecao-produto {
+    font-size: 1rem;
+  }
+
+  .vitrineDestaquinho-link {
+    width: 30%;
+  }
+}
+
+@media (min-width: 512px) {
+  .cabecalhoProdutoLivro-tituloEAutor {
+    max-width: 60%;
+    font-size: 1.25em;
+  }
+
+  .cabecalhoProdutoLivro .imagemLivroNinja {
+    width: 38%;
+  }
+}
+
+@media (min-width: 549px) {
+  .sobre-imagem {
+    float: right;
+    margin: .6em 0 .6em .6em;
+  }
+}
+
+@media (min-width: 551px) {
+  .categorias-secao {
+    width: 33%;
+  }
+}
+
+@media (min-width: 585px) {
+  .produtoEmPreVenda-mensagem {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 590px) {
+  .e404 {
+    margin-top: 3em;
+  }
+}
+
+@media (min-width: 600px) {
+  .comentariosDoLivro-lista-item {
+    max-width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin-bottom: 1.5em;
+  }
+
+  .comentariosDoLivro-lista-quoteItem:nth-child(4n) {
+    display: none;
+  }
+
+  .comentariosDoLivro-lista-quoteItem {
+    width: 10%;
+    margin: .6em auto;
+    display: inline-block;
+  }
+
+  .formularioDoCarrinho {
+    width: 100%;
+    margin: 0;
+    font-size: 1.2em;
+  }
+
+  .formularioDoCarrinho-item-imagem {
+    width: 60px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .infosAdicionaisDoLivro-info {
+    margin-bottom: 0;
+  }
+
+  .infosAdicionaisDoLivro-info,
+  .infosAdicionaisDoLivro-links {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .infosAdicionaisDoLivro {
+    text-align: justify;
+    line-height: 0;
+  }
+
+  .infoSection-titulo,
+  .infosAdicionaisDoLivro-info,
+  .infosAdicionaisDoLivro-links {
+    line-height: normal;
+  }
+
+  .infosAdicionaisDoLivro:after {
+    content: ".";
+    color: transparent;
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+  }
+}
+
+@media (min-width: 625px) {
+  .cabecalhoPrincipal {
+    margin-bottom: 2.75em;
+  }
+
+  #navegacaoCabecalho:not(:target) .cabecalhoPrincipal-escondeCategoriasEBusca,
+  #navegacaoCabecalho:not(:target) .cabecalhoPrincipal-mostraCategoriasEBusca,
+  #navegacaoCabecalho:target .cabecalhoPrincipal-escondeCategoriasEBusca,
+  #navegacaoCabecalho:target .cabecalhoPrincipal-mostraCategoriasEBusca {
+    display: none;
+  }
+
+  .colecoesDaCDC {
+    color: #fff;
+  }
+
+  .colecoesDaCDC-colecaoItem {
+    margin: 0;
+  }
+
+  .colecoesDaCDC-colecaoItem + .colecoesDaCDC-colecaoItem {
+    margin-left: .4em;
+  }
+
+
+
+  .buscaPrincipal {
+    position: absolute;
+    bottom: 100%;
+    right: calc(5% + 57px);
+    height: 55px;
+    background: none;
+    padding: 12px 0;
+    margin: 0;
+    text-align: right;
+    box-sizing: border-box;
+  }
+
+  .buscaPrincipal-campo {
+    vertical-align: middle;
+    height: 30px;
+    padding: .2em;
+    margin-right: .2em;
+    width: 13em;
+  }
+
+  .buscaPrincipal-submit {
+    font-family: "museo", serif;
+    background-image: url(//cdn.shopify.com/s/files/1/0155/7645/t/214/assets/search.svg?9766601392841079263);
+    line-height: 0;
+    color: transparent;
+    background-color: #f8965d;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    border: none;
+    width: 50px;
+    height: 30px;
+    vertical-align: middle;
+    margin: 0;
+  }
+
+  .buscaPrincipal-submit:hover {
+    background-color: rgba(0,0,0,0.2);
+  }
+}
+
+@media (min-width: 630px) {
+  .vitrineDestacao {
+    background-size: 15em;
+  }
+}
+
+@media (min-width: 636px) {
+  .adicionarAoCarrinho-tipoDaOferta {
+    vertical-align: middle;
+    display: inline-block;
+    width: 9.5em;
+    text-align: left;
+    margin-right: .5em;
+  }
+
+  .adicionarAoCarrinho-preco {
+    font-size: 1em;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+@media (min-width: 647px) {
+  .categorias-secao {
+    width: 28%;
+  }
+}
+
+@media (min-width: 685px) {
+  .rodape-logo {
+    float: left;
+    display: block;
+    margin-right: 2.5em;
+  }
+
+  .rodape-secaoOutros {
+    margin-left: 125px;
+  }
+}
+
+@media (min-width: 729px) {
+  .autoresDoLivro-autor-foto {
+    width: 4.5em;
+    height: 4.5em;
+  }
+
+  .autoresDoLivro-autor-foto {
+    float: left;
+  }
+
+  .autoresDoLivro-autor-nome,
+  .autoresDoLivro-autor-descricao {
+    clear: none;
+    display: block;
+    overflow: hidden;
+    margin-left: 6rem;
+  }
+}
+
+@media (min-width: 740px) {
+  .adicionarAoCarrinho-tipoDaOferta {
+    margin-right: 2em;
+  }
+}
+
+@media (min-width: 791px) {
+  .recomendacoes-livros:after {
+    content: ' ';
+    display: inline-block;
+    height: 0;
+    width: 100%;
+    color: transparent;
+    font-size: 0;
+  }
+
+  .recomendacoes-livro {
+    max-width: 160px;
+  }
+
+  .recomendacoes-ofertas {
+    width: calc(100% - 320px - 4em);
+  }
+
+  .recomendacoes-ofertas .adicionarAoCarrinho-listaOfertas {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .vitrineDestaquinho-linkWrapper {
+    padding-left: 10%;
+  }
+}
+
+@media (min-width: 819px) {
+  .categorias-secao {
+    width: 22%;
+  }
+}
+
+@media (min-width: 845px) {
+  .buscaDoRodape-rotulo,
+  .buscaDoRodape-fieldset {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .buscaDoRodape {
+    text-align: center;
+    margin-top: 3em;
+  }
+
+  .buscaDoRodape-fieldset {
+    width: 75%;
+  }
+
+  .buscaDoRodape-rotulo {
+    text-align: right;
+    max-width: 8.1em;
+    margin-right: 1em;
+    margin: 0 .4em 0 0;
+  }
+}
+
+@media (min-width: 872px) {
+  .adicionarAoCarrinho {
+    min-height: 12em;
+  }
+
+  .adicionarAoCarrinho-listaOfertas {
+    padding: 0 2em;
+  }
+
+  .adicionarCamisetaAoCarrinho {
+    border-radius: 3px;
+  }
+
+  .adicionarCamisetaAoCarrinho-preco,
+  .adicionarCamisetaAoCarrinho-preco-chamada,
+  .adicionarCamisetaAoCarrinho-preco-valor,
+  .adicionarCamisetaAoCarrinho-tamanhos,
+  .adicionarCamisetaAoCarrinho-botaoComprar {
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .adicionarCamisetaAoCarrinho-tamanhos {
+    margin: 0 .6em;
+  }
+
+  .cabecalhoProdutoLivro {
+    padding-top: 3.5em;
+    padding-bottom: 0;
+  }
+
+  .cabecalhoProdutoLivro-tituloEAutor {
+    max-width: 60%;
+  }
+
+  .cabecalhoProdutoLivro-nomeAutor {
+    margin: 1em 0 1.2em;
+  }
+
+  .cabecalhoProdutoLivro .imagemLivroNinja {
+    width: 38%;
+    order: 1;
+  }
+
+  .cabecalhoProdutoLivro {
+    align-items: flex-start;
+    overflow: visible;
+  }
+
+  .cabecalhoProdutoLivro-tituloEAutor {
+    max-width: 100%;
+    margin-left: 45%;
+  }
+
+  .cabecalhoProdutoLivro .imagemLivroNinja {
+    position: absolute;
+    left: 5%;
+  }
+
+  .cabecalhoProdutoLivro + .adicionarAoCarrinho {
+    margin-left: 45%;
+    margin-right: 5%;
+  }
+
+  .cabecalhoProdutoCamiseta {
+    align-items: flex-start;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-between;
+  }
+
+  .cabecalhoProdutoCamiseta-carrinho {
+    text-align: left;
+    margin-left: 2em;
+  }
+
+  .cabecalhoProdutoCamiseta-titulo {
+    display: none;
+  }
+
+  .cabecalhoProdutoCamiseta-carrinho .cabecalhoProdutoCamiseta-titulo {
+    display: block;
+    padding: 0;
+  }
+
+  .cabecalhoProdutoCamiseta-imagem {
+    max-width: 54%;
+  }
+}
+
+@media (min-width: 881px) {
+  .rodape-secaoOutros {
+    margin-left: 4em;
+    min-width: 0;
+  }
+
+  .rodape-secaoOutros .rodape-titulo {
+    max-width: 14em;
+  }
+
+  .rodape-logo {
+    margin-right: 5em;
+  }
+}
+
+@media (min-width: 900px) {
+  .vitrineDestaquinho-linkWrapper {
+    padding-left: 16%;
+  }
+
+  .comentariosDoLivro-lista-item {
+    max-width: 27%;
+  }
+
+  .comentariosDoLivro-lista-quoteItem {
+    width: 9.5%;
+  }
+
+  .comentariosDoLivro-lista-quoteItem:nth-child(4n) {
+    display: inline-block;
+  }
+
+  .comentariosDoLivro-lista-quoteItem:nth-child(6n) {
+    display: none;
+  }
+}
+
+@media (min-width: 910px) {
+  .frete-tabelas {
+    display: block;
+  }
+
+  .frete-tabelas:after {
+    content: ".";
+    color: transparent;
+    display: inline-block;
+    width: 100%;
+    height: 0;
+  }
+
+  .frete-tabela {
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .frete-tabela-item {
+    width: 10em;
+  }
+
+  .frete-tabela-unica {
+    display: none;
+  }
+}
+
+@media (min-width: 928px) {
+  .rodape {
+    text-align: center;
+  }
+
+  .rodape-secao {
+    text-align: left;
+  }
+
+  .rodape-formaDePagamento {
+    display: inline-block;
+  }
+
+  .rodape-formaDePagamento:nth-child(n+2) {
+    margin-left: 1.5em;
+    margin-top: 0;
+  }
+
+  .rodape-secaoOutros {
+    min-width: 293px;
+  }
+}
+
+@media (min-width: 950px) {
+  .vitrineDestaquinho-linkWrapper {
+    padding-left: 20%;
+  }
+}
+
+@media (min-width: 970px) {
+  .adicionarAoCarrinho {
+    min-height: 13em;
+  }
+}
+
+@media (min-width: 998px) {
+  .categorias-secao {
+    width: 18%;
+  }
+}
+
+@media (min-width: 1019px) {
+  .vitrineDestaquinho-link {
+    position: absolute;
+    top: 1.6em;
+    right: 5%;
+    width: auto;
+  }
+
+  .vitrineDestaquinho {
+    position: relative;
+  }
+
+  .vitrineDestaquinho-linkWrapper {
+    padding: 0;
+  }
+
+  .vitrineDestaquinho-linkTexto,
+  .vitrineDestaquinho-linkFirula {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+@media (min-width: 1020px) {
+  .livroNaVitrine {
+    width: 19%;
+  }
+}
+
+@media (min-width: 1040px) {
+  .adicionarAoCarrinho {
+    min-height: 14em;
+  }
+}
+
+@media (min-width: 1082px) {
+  .cabecalhoProdutoLivro + .adicionarAoCarrinho .adicionarAoCarrinho-tipoDaOferta {
+    width: 5em;
+    margin-right: .5em;
+  }
+}
+
+@media (min-width: 1160px) {
+  .vitrineDestacao-item {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .vitrineDestacao-item:nth-child(3n+2) {
+    margin: 0 calc(50% - 488px);
+  }
+
+  .vitrineDestacao-itemPrincipal {
+    margin-left: 0;
+    margin-right: 216px;
+  }
+
+  .vitrineDestacao-itemPrincipal .vitrineDestacao-item-info {
+    position: absolute;
+    left: 100%;
+    top: 15%;
+    text-align: left;
+    margin: 0;
+    width: 216px;
+    padding: 0.7em 1em 1.4em .5em;
+    background-color: rgba(51,51,51,.8);
+  }
+
+  .vitrineDestacao-itemPrincipal .vitrineDestacao-item-nome {
+    font-size: 2em;
+  }
+
+  .vitrineDestacao-itemPrincipal .vitrineDestacao-item-maisDetalhes {
+    margin: 1em 0 0;
+  }
+
+  .vitrineDestacao-itemSecundario .vitrineDestacao-item-nome {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cabecalhoPrincipal {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1205px) {
+  .cabecalhoDaColecao-titulo {
+    padding-left: calc(50% - 600px);
+  }
+
+  .cabecalhoProdutoLivro-tituloEAutor {
+    margin-left: 580px;
+  }
+
+  .cabecalhoProdutoLivro .imagemLivroNinja {
+    width: 540px;
+    left: calc(50% - 600px);
+  }
+
+  .cabecalhoProdutoLivro + .adicionarAoCarrinho {
+    margin-left: calc(50% - 20px);
+    margin-right: calc(50% - 600px);
+    margin-bottom: 2.5em;
+  }
+
+  .cabecalhoProdutoLivro + .adicionarAoCarrinho .adicionarAoCarrinho-tipoDaOferta {
+    width: 7.5em;
+    margin-right: 1em;
+  }
+
+  .cabecalhoProdutoCamiseta {
+    justify-content: center;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+
+  .cabecalhoProdutoCamiseta-imagem {
+    max-width: none;
+  }
+
+  .colecoesDaCDC {
+    position: absolute;
+    bottom: 100%;
+    left: calc(47% - 279px);
+    background: none;
+    height: 50px;
+    padding: .6em 0 0;
+    box-sizing: border-box;
+  }
+
+  .colecoesDaCDC-colecaoLink {
+    background: none;
+  }
+
+  .colecoesDaCDC-colecaoLink:hover {
+    background-color: rgba(0,0,0,.2);
+  }
+
+  .container {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+
+  .infoSection {
+    padding-top: 5em;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+
+  .recomendacoes .infoSection {
+    padding-top: 2em;
+  }
+
+  .vitrineDaColecao-produto {
+    width: 205px;
+    margin-left: calc(12.5% - 128.13px);
+    margin-right: calc(12.5% - 128.13px);
+  }
+
+  .vitrineDaColecao-produto:nth-child(5n+1) {
+    margin-left: 0;
+  }
+
+  .vitrineDaColecao-produto:nth-child(5n+5) {
+    margin-right: 0;
+  }
+
+  .vitrineDestaquinho-link {
+    right: calc(50% - 600px);
+  }
+
+  .buscaPrincipal {
+    right: calc(50% - 600px + 57px);
+  }
+
+  .vitrineDestacao-itemPrincipal .vitrineDestacao-item-info {
+    padding: 1.4em 2em 2em 1.7em;
+  }
+
+  .vitrineDestacao-itemPrincipal {
+    max-width: 420px;
+  }
+
+  .vitrineDestacao-item:nth-child(3n+2) {
+    margin: 0 calc(50% - 523px);
+  }
+}
+
+@media (max-width: 630px) {
+  .vitrineDestacao-itemPrincipal {
+    margin-bottom: 2em;
+  }
+}
+
+@media (max-width: 624px) {
+  #navegacaoCabecalho:not(:target) .buscaPrincipal,
+  #navegacaoCabecalho:not(:target) .colecoesDaCDC {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .caelumGroup-footer ul {
+    display: none;
+  }
+
+  .caelumGroup-footer p {
+    width: 100%;
+    text-align: center;
+    padding-bottom: .5em;
+  }
+}
+
+@media (max-width: 550px) {
+  .categorias-footer {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 523px) {
+  .vitrineDestacao-itemSecundario + .vitrineDestacao-itemSecundario {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 509px) {
+  .vitrineDaColecao-lista {
+    text-align: justify;
+    line-height: 0;
+  }
+
+  .vitrineDaColecao-lista:after {
+    content: ".";
+    color: transparent;
+    display: inline-block;
+    height: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 419px) {
+  .buscaPrincipal-campo {
+    width: 70%;
+  }
+}
+
+@media (max-width: 379px) {
+  .vitrineDestacao-itemSecundario .vitrineDestacao-item-maisDetalhes {
+    font-size: .8em;
+  }
+}
+
+@media (min-width: 490px) and (max-width: 871px) {
+  .adicionarCamisetaAoCarrinho-preco,
+  .adicionarCamisetaAoCarrinho-preco-chamada,
+  .adicionarCamisetaAoCarrinho-preco-valor,
+  .adicionarCamisetaAoCarrinho-tamanhos,
+  .adicionarCamisetaAoCarrinho-botaoComprar {
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .adicionarCamisetaAoCarrinho-tamanhos {
+    margin: 0 .5em;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 512px) {
+  .cabecalhoProdutoLivro .imagemLivroNinja-tablet,
+  .cabecalhoProdutoLivro .imagemLivroNinja-cel {
+    display: none;
+  }
+
+  .cabecalhoProdutoLivro .imagemLivroNinja-principal {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media (min-width: 872px) and (max-width: 1082px) {
+  .cabecalhoProdutoLivro + .adicionarAoCarrinho .adicionarAoCarrinho-tipoDaOferta {
+    display: block;
+    width: auto;
+  }
+
+  .cabecalhoProdutoLivro + .adicionarAoCarrinho .adicionarAoCarrinho-preco {
+    display: block;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 871px) {
+  .cabecalhoProdutoCamiseta-titulo {
+    text-align: center;
+  }
+
+  .cabecalhoProdutoCamiseta-imagem {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 636px) and (max-width: 755px) {
+  .recomendacoes-ofertas .adicionarAoCarrinho-tipoDaOferta {
+    display: block;
+    width: auto;
+    margin-right: .5em;
+  }
+}
+
+@media (min-width: 660px) and (max-width: 790px) {
+  .recomendacoes-livro:nth-child(1) {
+    margin-left: 2em;
+  }
+
+  .recomendacoes-livro:nth-child(3) {
+    margin-right: 2em;
+  }
+}
+
+@media (min-width: 791px) and (max-width: 885px) {
+  .recomendacoes-ofertas .adicionarAoCarrinho-tipoDaOferta {
+    display: block;
+    width: auto;
+    margin-right: .5em;
+  }
+
+  .recomendacoes-ofertas .adicionarAoCarrinho-tipoDaOferta-detalhe,
+  .recomendacoes-ofertas .adicionarAoCarrinho-preco-promocao {
+    display: none;
+  }
+
+  .recomendacoes-ofertas .adicionarAoCarrinho-preco {
+    display: block;
+  }
+}
+
+@media (min-width: 886px) and (max-width: 1180px) {
+  .recomendacoes-ofertas .adicionarAoCarrinho-tipoDaOferta {
+    display: block;
+  }
+}
+
+@media (min-width: 325px) and (max-width: 859px) {
+  .rodape-formaDePagamento {
+    display: inline-block;
+  }
+
+  .rodape-formaDePagamento:nth-child(n+2) {
+    margin-left: 1.5em;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 510px) and (max-width: 659px) {
+  .vitrineDaColecao-lista {
+    font-size: 0;
+  }
+
+  .vitrineDaColecao-produto {
+    font-size: 1rem;
+    width: 140px;
+  }
+
+  .vitrineDaColecao-produto:nth-child(3n+2) {
+    margin-left: calc(50% - 210px);
+    margin-right: calc(50% - 210px);
+  }
+}
+
+@media (min-width: 660px) and (max-width: 759px) {
+  .vitrineDaColecao-produto {
+    width: 180px;
+  }
+
+  .vitrineDaColecao-produto:nth-child(3n+2) {
+    margin-left: calc(50% - 270px);
+    margin-right: calc(50% - 270px);
+  }
+}
+
+@media (min-width: 760px) and (max-width: 999px) {
+  .vitrineDaColecao-produto {
+    width: 204px;
+  }
+
+  .vitrineDaColecao-produto:nth-child(3n+2) {
+    margin-left: calc(50% - 306px);
+    margin-right: calc(50% - 306px);
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1204px) {
+  .vitrineDaColecao-produto {
+    width: 205px;
+    margin-left: calc(16.666% - 136.667px);
+    margin-right: calc(16.666% - 136.667px);
+  }
+
+  .vitrineDaColecao-produto:nth-child(4n+1) {
+    margin-left: 0;
+  }
+
+  .vitrineDaColecao-produto:nth-child(4n+4) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 510px) and (max-width: 1019px) {
+  .vitrineDestaquinho-produto.livroNaVitrine {
+    float: left;
+    max-width: none;
+  }
+
+  .vitrineDestaquinho-produto:nth-child(3n + 1) {
+    text-align: left;
+  }
+
+  .vitrineDestaquinho-produto:nth-child(3n) {
+    text-align: right;
+  }
+
+  .vitrineDestaquinho-produto:nth-child(3n -1) {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .vitrineDestaquinho-produto:nth-child(4) {
+    clear: left;
+  }
+}
+
+@media (min-width: 524px) and (max-width: 629px) {
+  .vitrineDestacao-itemSecundario {
+    width: 205px;
+  }
+
+  .vitrineDestacao-itemSecundario {
+    margin: 0 calc(25% - 102.5px);
+  }
+}
+
+@media (min-width: 630px) and (max-width: 1159px) {
+  .vitrineDestacao-item {
+    display: inline-block;
+    width: 180px;
+    vertical-align: top;
+  }
+
+  .vitrineDestacao-item:nth-child(3n+2) {
+    margin: 0 calc(50% - 270px);
+  }
+
+  .vitrineDestacao-itemPrincipal .vitrineDestacao-item-info {
+    margin: 0;
+  }
+
+  .vitrineDestacao-itemPrincipal .vitrineDestacao-item-nome {
+    margin-top: 1em;
+    height: 2.5em;
+    font-size: 1em;
+  }
+
+  .vitrineDestacao-itemPrincipal .vitrineDestacao-item-maisDetalhes {
+    margin-top: 1.16em;
+  }
+
+  .vitrineDestacao-itemPrincipal .vitrineDestacao-item-imagem {
+    margin-bottom: 0;
+  }
+
+  .vitrineDestacao-itemPrincipal .imagemLivroNinja-principal {
+    width: 100%;
+    left: 0;
+    top: 0;
+    box-shadow: 3px 3px 5px #383838;
+  }
+
+  .vitrineDestacao-itemPrincipal .imagemLivroNinja-tablet,
+  .vitrineDestacao-itemPrincipal .imagemLivroNinja-cel {
+    display: none;
+  }
+}

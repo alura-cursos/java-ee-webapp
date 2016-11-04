@@ -1,0 +1,102 @@
+.buscaPrincipal {
+	background-color: #333;
+	font-size: 1rem;
+	padding: 1em .5em;
+	text-align: center;
+}
+
+.buscaPrincipal > * {
+	vertical-align: middle;
+}
+
+.buscaPrincipal-label {
+	display: none;
+}
+
+.buscaPrincipal-campo {
+	font-family: "open-sans", sans-serif;
+	font-size: inherit;
+	-webkit-appearance: none;
+	border: none;
+	display: inline-block;
+	width: 80%;
+	box-sizing: border-box;
+	padding: .5em;
+	border-radius: 3px;
+	vertical-align: middle;
+	color: #6c6a69;
+	font-size: .85em;
+}
+
+.buscaPrincipal-submit {
+	display: inline-block;
+	vertical-align: middle;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: .9em;
+	font-family: "open-sans", sans-serif;
+	font-weight: 700;
+	padding: .5em;
+	border: none;
+	background-color: rgba(0,0,0,.4);
+	border-radius: 2px;
+	margin-left: .5em;
+	cursor: pointer;
+}
+
+.buscaPrincipal-submit:hover {
+	background-color: rgba(0,0,0,.7);
+}
+
+@media screen and (max-width: 419px) {
+	.buscaPrincipal-campo {
+		width: 70%;
+	}
+}
+
+@media screen and (min-width: 625px) {
+	.buscaPrincipal {
+		position: absolute;
+		bottom: 100%;
+		right: calc(5% + 57px);
+		height: 55px;
+		background: none;
+		padding: 12px 0;
+		margin: 0;
+		text-align: right;
+		box-sizing: border-box;
+	}
+
+	.buscaPrincipal-campo {
+		vertical-align: middle;
+		height: 30px;
+		padding: .2em;
+		margin-right: .2em;
+		width: 13em;
+	}
+
+	.buscaPrincipal-submit {
+		font-family: "museo", serif;
+		background-image: url(//cdn.shopify.com/s/files/1/0155/7645/t/212/assets/search.svg?18102142594134168091);
+		line-height: 0;
+		color: transparent;
+		background-color: #f8965d;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 20px;
+		border: none;
+		width: 50px;
+		height: 30px;
+		vertical-align: middle;
+		margin: 0;
+	}
+	.buscaPrincipal-submit:hover {
+		background-color: rgba(0,0,0,0.2);
+	}
+}
+
+@media screen and (min-width: 1205px) {
+	.buscaPrincipal {
+		right: calc(50% - 600px + 57px);
+	}
+}

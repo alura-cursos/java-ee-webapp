@@ -1,0 +1,13 @@
+.carrinho-texto {
+	font-family: "museo", serif;
+	font-size: 1em;
+	line-height: 1.5;
+	color: #6c6a69;
+	font-weight: 300;
+	margin-top: 1em;
+}
+
+.carrinho-texto-link {
+	text-decoration: underline;
+	font-weight: 400;
+}

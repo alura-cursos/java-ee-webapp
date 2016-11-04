@@ -1,0 +1,166 @@
+.rodape {
+	background-color: #fbfaf9;
+	font-size: 0.9rem;
+	overflow: hidden;
+	padding: 3em 0;
+}
+
+.rodape-titulo {
+	color: #f8965d;
+	font-family: "open-sans", sans-serif;
+	font-weight: 700;
+	font-size: 1.15em;
+	margin-bottom: 1em;
+	line-height: 1.25;
+}
+
+.rodape-tituloSecundario {
+	margin-top: 2em;
+}
+
+.rodape-secaoOutros {
+	min-width: 293px;
+}
+
+.rodape-secaoLinks {
+	margin-bottom: 2em;
+}
+
+.rodape-item {
+	padding: .6em .25em;
+	color: #6c6a69;
+	font-family: "museo", serif;
+	font-weight: 500;
+}
+.rodape-itemLink {
+	display: block;
+	padding: .1em 0;
+}
+
+.rodape-item .compartilhar-facebook,
+.rodape-item .compartilhar-twitter {
+	color: #6c6a69;
+	font-family: "museo", serif;
+	font-weight: 500;
+}
+
+.rodape-logo {
+	display: none;
+}
+
+.rodape-breadcrumbs {
+	display: none;
+}
+
+.rodape-formularioDaNewsletter {
+	position: relative;
+	background-color: #fff;
+	border-radius: 2px;
+	padding: .2em;
+}
+
+.rodape-campoDaNewsletter {
+	border: none;
+	background: none;
+	border-radius: 2px;
+	height: 35px;
+	width: 100%;
+	box-sizing: border-box;
+	padding-right: 5em;
+	margin-right: 3px;
+	text-indent: .2em;
+	font-size: 1.2em;
+	color: #6C6A69;
+	font-size: .9em;
+}
+
+.rodape-botaoDaNewsletter {
+	position: absolute;
+	top: .3em;
+	right: .3em;
+	font-family: "museo", serif;
+	color: #fff;
+	font-size: 1.2em;
+	background-color: #333;
+	border: none;
+	border-radius: 2px;
+	width: 50px;
+	height: 32px;
+	cursor: pointer;
+}
+.rodape-botaoDaNewsletter:hover {
+	background-color: #666;
+}
+
+.rodape-formaDePagamento:nth-child(n+2) {
+	margin-top: 1em;
+}
+
+@media screen and (min-width: 325px) and (max-width: 859px) {
+	.rodape-formaDePagamento {
+		display: inline-block;
+	}
+	.rodape-formaDePagamento:nth-child(n+2) {
+		margin-left: 1.5em;
+		margin-top: 0;
+	}
+}
+
+.rodape-titulo-espacador {
+	display: none;
+}
+
+@media screen and (min-width: 475px) {
+	.rodape-secao {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.rodape-secaoLinks .rodape-titulo-espacador {
+		width: 50px;
+		display: inherit;
+	}
+}
+
+@media screen and (min-width: 685px) {
+	.rodape-logo {
+		float: left;
+		display: block;
+		margin-right: 2.5em;
+	}
+	.rodape-secaoOutros {
+		margin-left: 125px;
+	}
+}
+
+@media screen and (min-width: 881px) {
+	.rodape-secaoOutros {
+		margin-left: 4em;
+		min-width: 0;
+	}
+	.rodape-secaoOutros .rodape-titulo {
+		max-width: 14em;
+	}
+	.rodape-logo {
+		margin-right: 5em;
+	}
+}
+
+@media screen and (min-width: 928px) {
+	.rodape {
+		text-align: center;
+	}
+	.rodape-secao {
+		text-align: left;
+	}
+	.rodape-formaDePagamento {
+		display: inline-block;
+	}
+	.rodape-formaDePagamento:nth-child(n+2) {
+		margin-left: 1.5em;
+		margin-top: 0;
+	}
+	.rodape-secaoOutros {
+		min-width: 293px;
+	}
+}
