@@ -1,0 +1,128 @@
+.formularioDoCarrinho {
+	width: 110%;
+	margin-left: -5%;
+}
+
+.formularioDoCarrinho-tabela {
+	background-color: #F2F0EE;
+	text-align: center;
+	width: 100%;
+}
+
+.formularioDoCarrinho-cabecalho {
+	background-color: #E4E1DE;
+	border-bottom: 1px solid #D5D3D1;
+	padding-bottom: .35em;
+	margin-bottom: .6em;
+	font-family: "open-sans", sans-serif;
+	font-size: .9em;
+	font-weight: 700;
+}
+
+.formularioDoCarrinho-cabecalho-item {
+	padding: .5em 0;
+}
+
+.formularioDoCarrinho-item {
+	font-size: .8em;
+	font-family: "museo", serif;
+	padding: .2em;
+	vertical-align: middle;
+}
+
+.formularioDoCarrinho-item-imagem {
+	width: 35px;
+}
+
+.formularioDoCarrinho-item-quantidade {
+	max-width: 2.3em;
+	text-align: center;
+}
+
+.formularioDoCarrinho-item-remover-imagem {
+	width: 1.5em;
+	height: 1.5em;
+}
+
+.formularioDoCarrinho-rodape {
+	background-color: #E4E1DE;
+	border-top: 1px solid #D5D3D1;
+	font-family: "open-sans", sans-serif;
+	font-size: .9em;
+	font-weight: 700;
+}
+
+.formularioDoCarrinho-rodape-item {
+	padding: .5em 0;
+	vertical-align: middle;
+}
+
+.formularioDoCarrinho-finalizar {
+	text-align: left;
+	padding-left: .5em;
+}
+
+.formularioDoCarrinho-finalizar-botao {
+	font-family: "open-sans", sans-serif;
+	font-size: 1em;
+	font-weight: 800;
+	color: #FFF;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0 9px 0 2px;
+	border-radius: 2px;
+	display: block;
+	background-color: #fac459;
+	border: none;
+	cursor: pointer;
+}
+.formularioDoCarrinho-finalizar-botao:hover {
+	background-color: #E4A830;
+}
+
+.formularioDoCarrinho-finalizar-botao::before {
+	content: ' ';
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	background-image: url(//cdn.shopify.com/s/files/1/0155/7645/t/212/assets/cart.png?4957467331228196608);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: 50%;
+	-webkit-background-size: 80%;
+	background-size: 80%;
+	vertical-align: middle;
+}
+.formularioDoCarrinho-finalizar-botao-texto {
+	display: none;
+}
+
+.formularioDoCarrinho-atualizar {
+	background-image: url(//cdn.shopify.com/s/files/1/0155/7645/t/212/assets/refresh.png?4957467331228196608);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-color: transparent;
+	background-size: 75%;
+	width: 24px;
+	height: 24px;
+	border: none;
+	cursor: pointer;
+	font-size: 0;
+}
+
+@media screen and (min-width: 381px) {
+	.formularioDoCarrinho-finalizar-botao-texto {
+		display: inline;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.formularioDoCarrinho {
+		width: 100%;
+		margin: 0;
+		font-size: 1.2em;
+	}
+	.formularioDoCarrinho-item-imagem {
+		width: 60px;
+	}
+}
