@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+	<h:form enctype="multipart/form-data">
+		<div>
+			<h:outputLabel value="Título" />
+			<h:inputText value="#{adminLivrosBean.livro.titulo}"
+				required="true" id="titulo" />
+			<h:message for="titulo" />
+		</div>
+		<div>
+			<h:outputLabel value="Descrição"/>
+			<h:inputTextarea rows="4" cols="20"
+				required="true" value="#{adminLivrosBean.livro.descricao}"
+				id="descricao" />
+			<h:message for="descricao" />
+		</div>
+		<div>
+			<h:outputLabel value="Número de Páginas"/>
+			<h:inputText value="#{adminLivrosBean.livro.numeroPaginas}" 
+				required="true" id="numeroPaginas" />
+			<h:message for="numeroPaginas" />
+		</div>
+		<div>
+			<h:outputLabel value="Preço"/>
+			<h:inputText value="#{adminLivrosBean.livro.preco}" 
+				required="true" id="preco" />
+			<h:message for="preco" />
+		</div>
+		<div>
+			<h:outputLabel value="Autores" />
+			<h:selectManyListbox	 value="#{adminLivrosBean.livro.autores}"
+					converter="autorConverter" id="autores">
+				<f:selectItems value="#{adminLivrosBean.autores}"
+					var="autor"
+					itemValue="#{autor}" itemLabel="#{autor.nome}" />
+			</h:selectManyListbox>
+			<h:message for="autores" />
+		</div>
+		<div>
+			<h:outputLabel value="Data de Publicação" />
+			<h:inputText value="#{adminLivrosBean.livro.dataPublicacao}"
+				id="dataPublicacao" />
+			<h:message for="dataPublicacao" />
+		</div>
+		<div>
+			<h:outputLabel value="Capa do Livro" />
+			<h:inputFile value="#{adminLivrosBean.capaLivro}" id="capaLivro" />
+		</div>
+		<h:commandButton value="Cadastrar" action="#{adminLivrosBean.salvar}" />
+	</h:form>
+
+</html>
+
+
+
+
+
+
+
+
+
